@@ -61,6 +61,7 @@ Name | Type | Description
 --- | ---- | -----------
 
 
+---
 ### Querying Scholarships
 `GET /api/scholarships`
 
@@ -70,6 +71,7 @@ Name | Type | Description
 Name | Type | Description
 --- | ---- | -----------
 
+---
 ### Creating a Scholarship
 `POST /api/scholarships`
 
@@ -77,17 +79,25 @@ Name | Type | Description
 Name | Description | Required? 
 --- | --- | ---
 
+
+---
 ### Retrieving a Scholarship
 `GET /api/scholarships/<id>`
 
+
+---
 ### Updating a Scholarship
 `PUT /api/scholarships/<id>`
 
 #### Arguments
 See arguments for "Creating a Scholarship"
 
+
+---
 ### Archiving a Scholarship
 `DELETE /api/scholarships/<id>`
 
+
+---
 ### Unarchiving a Scholarship
 `POST /api/scholarships/<id>`
