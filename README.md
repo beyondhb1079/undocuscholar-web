@@ -1,19 +1,19 @@
 # Backend Web Service
 
 ## Contents
-- About
-- Setup
-- API Overview
-  - HTTP Methods
-  - Response Format
-  - HTTP Status Codes
-- Scholarship API
-  - Scholarship Attributes
-  - Querying Scholarships
-  - Creating a Scholarship
-  - Updating a Scholarship
-  - Archiving a Scholarship
-  - Unarchiving a Scholarship
+- [About](#about)
+- [Setup](#setup)
+- [API Overview](#api-overview)
+  - [HTTP Methods](#http-methods)
+  - [Response Format](#response-format)
+  - [HTTP Status Codes](#http-status-codes)
+- [Scholarship API](#scholarship-api)
+  - [Scholarship Attributes](#scholarship-attributes)
+  - [Querying Scholarships](#querying-scholarships)
+  - [Creating a Scholarship](#creating-a-scholarship)
+  - [Updating a Scholarship](#updating-a-scholarship)
+  - [Archiving a Scholarship](#archiving-a-scholarship)
+  - [Unarchiving a Scholarship](#unarchiving-a-scholarship)
 
 ## About
 This application serves as the backbone for UndocuScholar by providing a Web Service that returns JSON
@@ -61,7 +61,8 @@ Name | Type | Description
 --- | ---- | -----------
 
 
-### Querying Scholarships - `GET /api/scholarships`
+### Querying Scholarships
+`GET /api/scholarships`
 
 #### Query Parameters:
 *TODO*
@@ -69,19 +70,24 @@ Name | Type | Description
 Name | Type | Description
 --- | ---- | -----------
 
-### Creating a Scholarship - `POST /api/scholarships`
+### Creating a Scholarship
+`POST /api/scholarships`
 
 #### Arguments
 Name | Description | Required? 
 --- | --- | ---
 
-### Retrieving a Scholarship - `GET /api/scholarships/<id>`
+### Retrieving a Scholarship
+`GET /api/scholarships/<id>`
 
-### Updating a Scholarship - `PUT /api/scholarships/<id>`
+### Updating a Scholarship
+`PUT /api/scholarships/<id>`
 
 #### Arguments
 See arguments for "Creating a Scholarship"
 
-### Archiving a Scholarship - `DELETE /api/scholarships/<id>`
+### Archiving a Scholarship
+`DELETE /api/scholarships/<id>`
 
-### Unarchiving a Scholarship - `POST /api/scholarships/<id>`
+### Unarchiving a Scholarship
+`POST /api/scholarships/<id>`
