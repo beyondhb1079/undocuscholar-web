@@ -2,7 +2,7 @@ import os
 import sqlite3
 import json
 from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash
+     render_template, flash, Response
 from flask.views import MethodView
 
 # Create the application
@@ -68,8 +68,26 @@ class ScholarshipAPI(MethodView):
     def get(self, item_id):
         if item_id is None:
             # Use request.args.get(key, default) to get the filtering arguments
-            return 'TODO: Query scholarships using filters: \n\n%s\n' % \
-                    json.dumps(request.args, indent=2)
+            response = {
+              "code": 0,
+              "message": "List of Scholarships",
+              "results": [
+                {
+                  "name": "Frank F. Conlon Fellowship",
+                  "deadline": "1/15/2016",
+                  "amount": 8000
+                },
+                {
+                  "name": "WAVA Phyllis Lawson Scholarship Award",
+                  "deadline": "1/31/2016",
+                  "amount": 1000
+                }
+              ]
+            }
+            response["filters"] = request.args
+            if "pretty" in request.args:
+                return Response(json.dumps(response, indent=2), mimetype='application/json')
+            return Response(json.dumps(response), mimetype='application/json')
         else:
             return 'TODO: Get scholarship with id: %d\n' % item_id
 
