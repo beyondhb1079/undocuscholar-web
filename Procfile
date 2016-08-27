@@ -1,1 +1,1 @@
-web: ./run.sh $PORT
+web: gunicorn backend_app:app
