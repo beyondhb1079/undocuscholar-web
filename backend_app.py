@@ -1,4 +1,4 @@
-import os
+import os, sys
 import sqlite3
 import json
 from flask import Flask, request, session, g, redirect, url_for, abort, \
@@ -8,6 +8,7 @@ from flask.views import MethodView
 # Create the application
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.debug = True
 
 # Load default config and override config from an environment variable
 app.config.update(dict(
@@ -56,6 +57,7 @@ def close_db(error):
 
 @app.route('/')
 def index():
+    sys.stderr.write('running...') 
     return 'Test Page\n'
 
 @app.route('/api')
@@ -116,3 +118,6 @@ app.add_url_rule('/api/scholarships', view_func=scholarship_view, methods=['POST
 app.add_url_rule('/api/scholarships/<int:item_id>', view_func=scholarship_view,
                  methods=['GET', 'PUT', 'DELETE', 'POST'])
 
+if __name__ == '__main__':
+    sys.stderr.write('running...') 
+    app.run()

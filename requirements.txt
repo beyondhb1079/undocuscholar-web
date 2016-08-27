@@ -1,3 +1,4 @@
-# To install use the command `pip install -r requirements.txt`
 Flask==0.11.1
+Jinja2==2.8
 SQLAlchemy==1.0.14
+gunicorn==19.6.0
