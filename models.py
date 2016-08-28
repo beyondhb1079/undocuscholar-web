@@ -17,7 +17,7 @@ class Scholarship(db.Model):
     def __repr__(self):
         return '<Name %r, Deadline %r, Amount %r>' % self.name
 
-class Subscription(db.Model):
-    # TODO: Add this for Push Notifications
-    pass
+# class Subscription(db.Model):
+#     # TODO: Add this for Push Notifications
+#     pass
 
