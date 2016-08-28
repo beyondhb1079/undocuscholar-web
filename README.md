@@ -55,30 +55,71 @@ Status Code | Description
 ## Scholarship API
 
 ### Scholarship Attributes
-*TODO*
+There are a lot of attributes pertaining to each scholarship. Not all attributes
+are returned in a given request.
+
+#### Scholarship List Attributes
+These are the attributes that will show up when retrieving a list of results. 
+Always check for null or the empty string as those often times indicate no value.
 
 Name | Type | Description
 --- | ---- | -----------
+`scholarship_id` | integer | The unique identifier for the scholarship
+`name` | string | The name of the scholarship
+`deadline` | string | The deadline date in format 'YYYY-MM-DD'
+`amount` | integer | The max amount of the scholarship
+`website` | string | The link for scholarship details
 
+<!-- TODO -->
+<!--`description` | string | A description summarizing the scholarship-->
+<!--`date_updated` | integer | The epoch time when this scholarship was last updated-->
+<!--`archived` | boolean | Whether this scholarship is archived or not-->
+<!--`verified` | boolean | Whether this scholarship is verified or not-->
+
+<!--#### Scholarship Detail Attributes-->
+<!--These attributes only show up when requesting the details of a particular scholarship-->
+
+
+<!--Name | Type | Description-->
+<!----- | ---- | ------------->
+<!--`count` | integer | The number of awards given out, if known-->
+<!--`date_created` | integer | The epoch time when this scholarship was created-->
+<!--`min_gpa` | double | The minimum GPA required for eligibility-->
+<!--`education_range` | string | The education level requirements ("any", "high", "ugrad", "grad") where more than one category is separated by a vertical bar '&#124;'.-->
+<!--`nationality` | string | Nationality eligibility requirements-->
+<!--`race` | string | Race eligibility requirements-->
+<!--`state` | char(2) | The state-specific scholarship requirement-->
+<!--`major` | string | Major eligibility requirements-->
+<!--`degree` | string | Degree eligibility requirements-->
+<!--`daca_needed` | boolean | Whether this scholarship requires DACA-->
 
 ---
 ### Querying Scholarships
 `GET /api/scholarships`
 
 #### Query Parameters:
-*TODO*
 
 Name | Type | Description
 --- | ---- | -----------
+`q` | string | The query string
+`min_amount` | string | The minimum scholarship amount
+`max_amount` | string | The maximum scholarship amount
+`deadline_after` | string | The minimum deadline threshold
+`deadline_before` | string | The maximum deadline threshold
+`sort` | string | The attribute for which to sort by
+`sort_order` | string | "desc" to sort in descending order, "asc" to sort in ascending order.
+<!--`state` | string | The state for which to find scholarships in-->
+<!--`gpa` | double | The max GPA threshold-->
+<!--`education_level` | string | The education level ("high", "ugrad", "grad")-->
+<!--`has_daca` | boolean | Excludes DACA-only scholarships from the results if set to false.-->
 
 ---
 ### Creating a Scholarship
 `POST /api/scholarships`
 
 #### Arguments
-Name | Description | Required? 
---- | --- | ---
-
+Use any/all of the scholarship attributes except for future `date_created`, `date_updated`, and `archived` attributes.
+Required: `amount`, `deadline`, `name`, `url`.
 
 ---
 ### Retrieving a Scholarship
@@ -88,6 +129,9 @@ Name | Description | Required?
 ---
 ### Updating a Scholarship
 `PUT /api/scholarships/<id>`
+
+#### Arguments
+Use any/all of the scholarship attributes except for future `date_created`, `date_updated`, and `archived` attributes.
 
 #### Arguments
 See arguments for "Creating a Scholarship"
