@@ -68,7 +68,7 @@ Name | Type | Description
 `name` | string | The name of the scholarship
 `deadline` | string | The deadline date in format 'YYYY-MM-DD'
 `amount` | integer | The max amount of the scholarship
-`website` | string | The link for scholarship details
+`url` | string | The link for scholarship details
 
 <!-- TODO -->
 <!--`description` | string | A description summarizing the scholarship-->
