@@ -38,43 +38,51 @@ class ScholarshipAPI(MethodView):
               "results": [
                 {
                   "name": "Frank F. Conlon Fellowship",
-                  "deadline": "1/15/2016",
-                  "amount": 8000
+                  "deadline": "1/15/2017",
+                  "amount": 8000,
+                  "url": "http://southasia.washington.edu/students/funding/#Conlon"
                 },
                 {
                   "name": "WAVA Phyllis Lawson Scholarship Award",
                   "deadline": "1/31/2016",
-                  "amount": 1000
+                  "amount": 1000,
+                  "url": "TBD"
                 },
                 {
                   "name": "Mount Baker Community Club MLK Scholarship",
                   "deadline": "1/15/2016",
-                  "amount": 10000
+                  "amount": 10000,
+                  "url": "http://www.mountbaker.org/scholarship/"
                 },
                 {
                   "name": "Annual Arevalo Scholarship",
                   "deadline": "3/14/2016",
-                  "amount": 1000
+                  "amount": 1000,
+                  "url": "http://www.ewu.edu/Documents/CSBSSW/Chicano%20Ed/Scholarships%202015-16/Arrevalo%20Scholarship%202015.pdf"
                 },
                 {
                   "name": "Orgullo Latino(a) University Scholarship",
                   "deadline": "3/14/2016",
-                  "amount": 1000
+                  "amount": 1000,
+                  "url": "http://www.fastweb.com/college-scholarships/scholarships/19801-orgullo-latino-university-scholarship"
                 },
                 {
                   "name": "Bernie Minsk Scholarship",
                   "deadline": "3/1/2016",
-                  "amount": 30000
+                  "amount": 30000,
+                  "url": "http://www.berniescholarships.org/Apply.html"
                 },
                 {
                   "name": "Walter H. Meyer - Garry L. White Memorial Scholarship",
                   "deadline": "3/1/2016",
-                  "amount": 5000
+                  "amount": 5000,
+                  "url": "http://www.collegeplan.org/cpnow/pnwguide/onlineaps/mwonap.htm"
                 },
                 {
                   "name": "Yuri and Tatsuo Nakata Scholarship",
                   "deadline": "3/1/2016",
-                  "amount": 2500
+                  "amount": 2500,
+                  "url": "http://www.washboard.org/ScholarshipDetails/The+Seattle+Foundation/2016-2017/Yuri+and+Tatsuo+Nakata+Scholarship"
                 }
               ]
             }
