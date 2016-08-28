@@ -6,7 +6,7 @@ class Scholarship(db.Model):
     name = db.Column(db.String(80))
     deadline = db.Column(db.String(10))
     amount = db.Column(db.Integer)
-    website = db.Column(db.String(120))
+    website = db.Column(db.String(200))
 
     def __init__(self, name, deadline, amount, website):
         self.name = name
