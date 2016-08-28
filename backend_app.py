@@ -4,6 +4,7 @@ import json
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, Response
 from flask.views import MethodView
+from werkzeug import Headers
 
 # Create the application
 app = Flask(__name__)
@@ -87,9 +88,11 @@ class ScholarshipAPI(MethodView):
               ]
             }
             response["filters"] = request.args
+            headers = Headers()
+            headers.add('Access-Control-Allow-Origin', '*')
             if "pretty" in request.args:
-                return Response(json.dumps(response, indent=2), mimetype='application/json')
-            return Response(json.dumps(response), mimetype='application/json')
+                return Response(json.dumps(response, indent=2), mimetype='application/json', headers=headers)
+            return Response(json.dumps(response), mimetype='application/json', headers=headers)
         else:
             return 'TODO: Get scholarship with id: %d\n' % item_id
 
