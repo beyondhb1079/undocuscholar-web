@@ -84,6 +84,36 @@ class ScholarshipAPI(MethodView):
                   "name": "WAVA Phyllis Lawson Scholarship Award",
                   "deadline": "1/31/2016",
                   "amount": 1000
+                },
+                {
+                  "name": "Mount Baker Community Club MLK Scholarship",
+                  "deadline": "1/15/2016",
+                  "amount": 10000
+                },
+                {
+                  "name": "Annual Arevalo Scholarship",
+                  "deadline": "3/14/2016",
+                  "amount": 1000
+                },
+                {
+                  "name": "Orgullo Latino(a) University Scholarship",
+                  "deadline": "3/14/2016",
+                  "amount": 1000
+                },
+                {
+                  "name": "Bernie Minsk Scholarship",
+                  "deadline": "3/1/2016",
+                  "amount": 30000
+                },
+                {
+                  "name": "Walter H. Meyer - Garry L. White Memorial Scholarship",
+                  "deadline": "3/1/2016",
+                  "amount": 5000
+                },
+                {
+                  "name": "Yuri and Tatsuo Nakata Scholarship",
+                  "deadline": "3/1/2016",
+                  "amount": 2500
                 }
               ]
             }
