@@ -38,7 +38,7 @@ class ScholarshipAPI(MethodView):
               "results": [
                 {
                   "name": "Frank F. Conlon Fellowship",
-                  "deadline": "1/15/2017",
+                  "deadline": "1/15/2016",
                   "amount": 8000,
                   "url": "http://southasia.washington.edu/students/funding/#Conlon"
                 },

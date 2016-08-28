@@ -15,7 +15,7 @@ class Scholarship(db.Model):
         self.url = url
 
     def __repr__(self):
-        return '<Name %r, Deadline %r, Amount %r>' % self.name
+        return '<Name %r, Deadline %r, Amount %r>' % (self.name, self.deadline, self.amount)
 
 # class Subscription(db.Model):
 #     # TODO: Add this for Push Notifications
