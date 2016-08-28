@@ -6,13 +6,13 @@ class Scholarship(db.Model):
     name = db.Column(db.String(80))
     deadline = db.Column(db.String(10))
     amount = db.Column(db.Integer)
-    website = db.Column(db.String(200))
+    url = db.Column(db.String(200))
 
-    def __init__(self, name, deadline, amount, website):
+    def __init__(self, name, deadline, amount, url):
         self.name = name
         self.deadline = deadline
         self.amount = amount
-        self.website = website
+        self.url = url
 
     def __repr__(self):
         return '<Name %r, Deadline %r, Amount %r>' % self.name
