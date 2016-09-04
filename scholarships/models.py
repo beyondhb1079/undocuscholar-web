@@ -77,15 +77,15 @@ class Scholarship(models.Model):
     name = models.CharField(max_length=255)
     deadline = models.DateField()
     amount = models.PositiveIntegerField()
-    description = models.TextField()
+    description = models.TextField(blank=True)
     website = models.URLField(blank=True)
-    count = models.PositiveIntegerField()
+    count = models.PositiveIntegerField(null=True, verbose_name="The number of awards handed out. May be null if unknown.")
     archived = models.BooleanField(default=False)
     verified = models.BooleanField(default=False)
-    date_created = models.DateTimeField(auto_now=True, auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
     
-    # TODO: Connect each scholarship to a particular user
+    # TODO: Connect each scholarship to a particular user who owns/verifies it
     # verifier = models.ForeignKey('auth.User', related_name='scholarships')
     
     # Eligibility fields. Should this be another table of its own? YES
@@ -101,6 +101,9 @@ class Scholarship(models.Model):
 
     def __repr__(self):
         return '%s - <Name %r, Deadline %r, Amount %r>' % (self.id, self.name, self.deadline, self.amount)
+    
+    def __str__(self):
+        return '%s | %s | %s' % (self.name, self.deadline, self.amount)
         
     def was_updated_recently(self):
         now = timezone.now()
