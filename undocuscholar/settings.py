@@ -33,6 +33,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
+    'scholarships.apps.ScholarshipsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,13 +77,13 @@ WSGI_APPLICATION = 'undocuscholar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-
+if 'DATABASE_URL' not in os.environ:
+    print 'runserver failed due to the environment variable "DATABASE_URL" not set'
 
 DATABASES = {
     # Expects a DATABASE_URL environment variable. Ask Josue for details
     'default': dj_database_url.config()
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
