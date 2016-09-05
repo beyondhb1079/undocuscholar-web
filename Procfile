@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn undocuscholar.wsgi:application --log-file - 
