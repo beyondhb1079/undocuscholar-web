@@ -1,3 +1,5 @@
+# Please note that this model is also used by the API
+
 from __future__ import unicode_literals
 import datetime
 from django.db import models
@@ -79,7 +81,7 @@ class Scholarship(models.Model):
     amount = models.PositiveIntegerField()
     description = models.TextField(blank=True)
     website = models.URLField(blank=True)
-    count = models.PositiveIntegerField(null=True, verbose_name="The number of awards handed out. May be null if unknown.")
+    count = models.PositiveIntegerField(null=True, verbose_name="Number of Awards (blank if unknown)")
     archived = models.BooleanField(default=False)
     verified = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now_add=True)
@@ -103,7 +105,7 @@ class Scholarship(models.Model):
         return '%s - <Name %r, Deadline %r, Amount %r>' % (self.id, self.name, self.deadline, self.amount)
     
     def __str__(self):
-        return '%s | %s | %s' % (self.name, self.deadline, self.amount)
+        return '%s' % (self.name)
         
     def was_updated_recently(self):
         now = timezone.now()
