@@ -22,3 +22,9 @@ urlpatterns = [
     url(r'^api/', include('api.urls')),
     url(r'^scholarships/', include('scholarships.urls')),
 ]
+
+# from django.conf import settings
+# urlpatterns +=
+#     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {
+#         'document_root': settings.STATIC_ROOT,
+#     })
