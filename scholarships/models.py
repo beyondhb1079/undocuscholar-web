@@ -78,10 +78,10 @@ SCHOOL_YEAR_CHOICES = (
 class Scholarship(models.Model):
     name = models.CharField(max_length=255)
     deadline = models.DateField()
-    amount = models.PositiveIntegerField()
+    amount = models.PositiveIntegerField(verbose_name="Max Amount ($)")
     description = models.TextField(blank=True)
     website = models.URLField(blank=True)
-    count = models.PositiveIntegerField(null=True, verbose_name="Number of Awards (blank if unknown)")
+    count = models.PositiveIntegerField(null=True, verbose_name="Number of Awards (leave blank if unknown)")
     archived = models.BooleanField(default=False)
     verified = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now_add=True)
