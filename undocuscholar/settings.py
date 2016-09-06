@@ -33,6 +33,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
+    'signup.apps.SignupConfig',
     'scholarships.apps.ScholarshipsConfig',
     'django.contrib.admin',
     'django.contrib.auth',

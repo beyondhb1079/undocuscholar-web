@@ -86,6 +86,7 @@ class Scholarship(models.Model):
     verified = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
+    # date_verified = null
     
     # TODO: Connect each scholarship to a particular user who owns/verifies it
     # verifier = models.ForeignKey('auth.User', related_name='scholarships')

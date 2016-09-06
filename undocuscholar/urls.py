@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('api.urls')),
     url(r'^scholarships/', include('scholarships.urls')),
+    url(r'^signup/', include('signup.urls')),
 ]
 
 # from django.conf import settings
