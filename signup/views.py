@@ -12,6 +12,10 @@ from django.core.validators import EmailValidator
 # confirmation. Also after the Beyond HB 1079 team is all added, make sure
 # is_staff isn't set to true for other strange people
 def index(request):
+    # TODO: validate_password(request.POST['password'])
+    if request.user.is_authenticated():
+        return HttpResponseRedirect("/admin/")
+    
     if request.method == 'GET':
         return render(request, 'signup/register.html')
     else:
@@ -32,15 +36,17 @@ def index(request):
             return HttpResponseRedirect("/admin/")
         except (IntegrityError):
             return render(request, 'signup/register.html', {
-                'form': {'non_field_errors': ['That username is already taken.']},
-                'username': request.POST['username'],
-                'email': request.POST['email']
+                'form': {
+                    'non_field_errors': ['That username is already taken.'],
+                    'username': request.POST['username'],
+                    'email': request.POST['email']
+                },
             })
         except Exception as e:
-            print e.message
-            raise e
             return render(request, 'signup/register.html', {
-                'form': {'non_field_errors': [e.message] },
-                'username': request.POST['username'],
-                'email': request.POST['email']
+                'form': {
+                    'non_field_errors': [e.message],
+                    'username': request.POST['username'],
+                    'email': request.POST['email']
+                }
             })
