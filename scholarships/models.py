@@ -74,21 +74,27 @@ SCHOOL_YEAR_CHOICES = (
     ('UG4', 'College Senior'),
 )
 
+
+
 @python_2_unicode_compatible  # only if you need to support Python 2
 class Scholarship(models.Model):
     name = models.CharField(max_length=255)
+    # TODO: Some deadlines are application count based
     deadline = models.DateField()
-    amount = models.PositiveIntegerField(verbose_name="Max Amount ($)")
+    # TODO: Some unknown | full tuition | vary - how to represent? Negative values?
+    # BETTER idea: Write a custom AmountField, where it's mostly an integer but can also be FULL_TUITION
+    amount = models.PositiveIntegerField(verbose_name="Max Amount ($)", null=True)  
     description = models.TextField(blank=True)
     website = models.URLField(blank=True)
-    count = models.PositiveIntegerField(null=True, verbose_name="Number of Awards (leave blank if unknown)")
+    count = models.PositiveIntegerField(null=True, blank=True, verbose_name="Number of Awards (leave blank if unknown)")
     archived = models.BooleanField(default=False)
     verified = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
+    # active = models.BooleanField(default=False)
     # date_verified = null
     
-    # TODO: Connect each scholarship to a particular user who owns/verifies it
+    # TODO: Maybe connect each scholarship to a particular user who owns/verifies it
     # verifier = models.ForeignKey('auth.User', related_name='scholarships')
     
     # Eligibility fields. Should this be another table of its own? YES
@@ -108,6 +114,12 @@ class Scholarship(models.Model):
     def __str__(self):
         return '%s' % (self.name)
         
+    def has_old_deadline(self):
+        # Has old deadline if deadline is > 180 days ago and self.active (TODO)
+        # TODO: Should we use deadline or date_updated?
+        now = timezone.now()
+        return now - datetime.timedelta(days=180) <= self.deadline <= now
+        
     def was_updated_recently(self):
         now = timezone.now()
         return now - datetime.timedelta(days=7) <= self.pub_date <= now
@@ -115,3 +127,7 @@ class Scholarship(models.Model):
     was_updated_recently.admin_order_field = 'date_updated'
     was_updated_recently.boolean = True
     was_updated_recently.short_description = 'Updated recently?'
+    
+    has_old_deadline.admin_order_field = 'deadline'
+    has_old_deadline.boolean = True
+    has_old_deadline.short_description = 'Old Deadline? (>180 days)'
