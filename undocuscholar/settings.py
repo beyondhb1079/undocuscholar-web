@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'undocuscholar.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 if 'DATABASE_URL' not in os.environ:
-    print 'runserver failed due to the environment variable "DATABASE_URL" not exported'
+    print('runserver failed due to the environment variable "DATABASE_URL" not exported')
 
 DATABASES = {
     # Expects a DATABASE_URL environment variable. Ask Josue for details
