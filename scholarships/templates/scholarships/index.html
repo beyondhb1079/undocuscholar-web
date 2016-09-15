@@ -46,6 +46,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container">
 
             <div class="row">
@@ -53,63 +54,21 @@
                     <h1 class="text-center text-primary header-date">Today's Date: 8/31/2016</h1> </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-8 w3-container scholarship-name">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">LEAP 1% Scholarship</p>
-                    </header>
+            {% for scholarship in scholarships %}
+                <div class="row">
+                    <div class="col-xs-8 w3-container scholarship-name">
+                        <header class="w3-container w3-blue" style="border-radius: 16px;">
+                          <p class="text-center">{{ scholarship.name }}</p>
+                        </header>
+                    </div>
+
+                    <div class="col-xs-4 w3-container scholarship-extra-info">
+                        <header class="w3-container w3-blue" style="border-radius: 16px;">
+                          <p class="text-center">${{ scholarship.amount }} Due on: {{ scholarship.deadline }}  </p>
+                        </header>
+                    </div>
                 </div>
-
-                <div class="col-xs-4 w3-container scholarship-extra-info">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">$100,000 Due in: 3 days </p>
-                    </header>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-8 w3-container scholarship-name">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">LEAP 1% Scholarship</p>
-                    </header>
-                </div>
-
-                <div class="col-xs-4 w3-container scholarship-extra-info">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">$100,000 Due in: 3 days </p>
-                    </header>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-8 w3-container scholarship-name">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">LEAP 1% Scholarship</p>
-                    </header>
-                </div>
-
-                <div class="col-xs-4 w3-container scholarship-extra-info">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">$100,000 Due in: 3 days </p>
-                    </header>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-8 w3-container scholarship-name">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">LEAP 1% Scholarship</p>
-                    </header>
-                </div>
-
-                <div class="col-xs-4 w3-container scholarship-extra-info">
-                    <header class="w3-container w3-blue" style="border-radius: 16px;">
-                      <p class="text-center">$100,000 Due in: 3 days </p>
-                    </header>
-                </div>
-            </div>
-
-
+            {% endfor %}
 
         </div>
 

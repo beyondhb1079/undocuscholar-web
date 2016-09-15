@@ -80,6 +80,9 @@ WSGI_APPLICATION = 'undocuscholar.wsgi.application'
 
 if 'DATABASE_URL' not in os.environ:
     print('runserver failed due to the environment variable "DATABASE_URL" not exported')
+else:
+    print(os.environ['DATABASE_URL'])
+    print(len(os.environ['DATABASE_URL']))
 
 DATABASES = {
     # Expects a DATABASE_URL environment variable. Ask Josue for details
@@ -124,6 +127,8 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
 
 # Extra places for collectstatic to find static files.
 # STATICFILES_DIRS = (

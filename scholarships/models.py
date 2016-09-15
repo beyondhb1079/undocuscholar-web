@@ -113,7 +113,8 @@ class Scholarship(models.Model):
     
     def __str__(self):
         return '%s' % (self.name)
-        
+
+
     def has_old_deadline(self):
         # Has old deadline if deadline is > 180 days ago and self.active (TODO)
         # TODO: Should we use deadline or date_updated?
