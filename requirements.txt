@@ -3,7 +3,6 @@ SecretStorage==2.0.0
 argparse==1.2.1
 colorama==0.2.5
 decorator==3.4.0
-dj-database-url==0.4.1
 djangorestframework==3.4.6
 gunicorn==19.6.0
 html5lib==0.999
@@ -30,3 +29,4 @@ wadllib==1.3.2
 wheel==0.24.0
 whitenoise==3.2.1
 zope.interface==4.0.5
+dj-database-url==0.4.1

@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^api/', include('api.urls')),
     url(r'^scholarships/', include('scholarships.urls')),
     url(r'^signup/', include('signup.urls')),
+    url(r'^$', 'scholarships.views.index'),
 ]
 
 # from django.conf import settings
