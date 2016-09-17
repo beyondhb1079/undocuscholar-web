@@ -72,24 +72,47 @@
 
         </div>
 
-        <div class="section">
-            <div class="container">
+        <div class="pagination">
+            <span class="step-links">
+                {% if scholarships.has_previous %}
+                    <a href="?page={{ scholarships.previous_page_number }}">previous</a>
+                {% endif %}
 
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <ul class="pagination">
-                            <li><a href="#">Prev</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                <span class="current">
+                    Page {{ scholarships.number }} of {{ scholarships.paginator.num_pages }}.
+                </span>
+
+                {% if scholarships.has_next %}
+                    <a href="?page={{ scholarships.next_page_number }}">next</a>
+                {% endif %}
+            </span>
         </div>
+
+
+
+
+
+
+
+
+{#        <div class="section">#}
+{#            <div class="container">#}
+{##}
+{#                <div class="row">#}
+{#                    <div class="col-md-12 text-center">#}
+{#                        <ul class="pagination">#}
+{#                            <li><a href="#">Prev</a></li>#}
+{#                            <li><a href="#">1</a></li>#}
+{#                            <li><a href="#">2</a></li>#}
+{#                            <li><a href="#">3</a></li>#}
+{#                            <li><a href="#">4</a></li>#}
+{#                            <li><a href="#">5</a></li>#}
+{#                            <li><a href="#">Next</a></li>#}
+{#                        </ul>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
     </body>
 
 </html>
