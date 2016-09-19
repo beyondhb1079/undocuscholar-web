@@ -1,26 +1,25 @@
-<!--{% load staticfiles %}-->
-
+{% load staticfiles%}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>UndocuScholars</title>
-
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <nav class="black lighten-2" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">UndocuScholar</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="./collection.html">Discover</a></li>
+                <li><a href="#">Discover</a></li>
             </ul>
 
 
@@ -44,41 +43,51 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <!-- end of nav -->
 
-    <div class="userView">
-        <img class="background responsive-img" src="images/maxresdefault.jpg">
-        <div class="container">
-            <br>
-            <br>
-            <div class="row center">
-                <h1 class="header hide-on-small-only orange-text">BeyondHB1070</h1>
-                <h3 class="header hide-on-med-and-up orange-text">BeyondHB1070</h3>
-            </div>
-            <div class="row center">
-                <h5 class="header col s12 light">Scholarships for Undocumented Students!</h5>
-            </div>
-            <div class="row center">
-                <div class="col s12 m6 l4 offset-l2">
-                   <a href="#" id="download-button" class="btn-large waves-effect waves-light green">Register</a>
-                </div>
-                <div class="hide-on-med-and-up">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="col s12 m6 l4 ">
-                 <a href="#" id="download-button" class="btn-large waves-effect waves-light green">Login</a>
-                </div>
+{% for scholarships in scholarships %}
+ <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="images/test" alt="" class="circle">
+      <span class="title"> {{ scholarship.name }} </span>
+      <p>${{ scholarship.amount }} <br>
+        sholarship description if any..
+<!--         ${{ scholarship.description }}-->
+      </p>
+        <p class="secondary-content">Due on: {{ scholarship.deadline }}</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+<!--
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+-->
+  </ul>
 
-            </div>
-            <br>
-            <br>
 
-        </div>
-    </div>
+
+
+
 
 
     <footer class="page-footer orange">
@@ -105,23 +114,22 @@
                         <li><a class="white-text" href="#!">Facebook</a></li>
                         <li><a class="white-text" href="#!">Twitter</a></li>
                         <li><a class="white-text" href="#!">GitHub</a></li>
-<!--                        <li><a class="white-text" href="#!">Link 4</a></li>-->
+                        <!--                        <li><a class="white-text" href="#!">Link 4</a></li>-->
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-<!--                Made by <a class="orange-text text-lighten-3" href="#">Materialize</a>-->
+                <!--                Made by <a class="orange-text text-lighten-3" href="#">Materialize</a>-->
             </div>
         </div>
     </footer>
 
-
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="materialize/js/materialize.js"></script>
-    <script src="js/init.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script tyoe="text/javascript" src="js/init.js"></script>
 
 </body>
 
