@@ -93,7 +93,21 @@
 
 {% endfor %}
 
+        <div class="center pagination">
+            <span class="step-links">
+                {% if scholarships.has_previous %}
+                    <a href="?page={{ scholarships.previous_page_number }}">previous</a>
+                {% endif %}
 
+                <span class="current">
+                    Page {{ scholarships.number }} of {{ scholarships.paginator.num_pages }}.
+                </span>
+
+                {% if scholarships.has_next %}
+                    <a href="?page={{ scholarships.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
 
 
 
