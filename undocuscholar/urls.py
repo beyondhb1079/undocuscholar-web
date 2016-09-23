@@ -14,7 +14,9 @@ Including another URLconf
     2. Import the include() function: from django.conf.urls import url, include
     3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
+from django.conf import settings
 from django.conf.urls import include, url
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 
@@ -25,10 +27,14 @@ urlpatterns = [
     url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'), 
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('api.urls')),
-    url(r'^scholarships/', include('scholarships.urls')),
-    url(r'^signup/', include('signup.urls')),
-    url(r'^$', 'scholarships.views.index'),
+    url(r'^', include('scholarships.urls')),
+    url(r'^zsignup/', include('signup.urls')),
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
 
 # from django.conf import settings
 # urlpatterns +=

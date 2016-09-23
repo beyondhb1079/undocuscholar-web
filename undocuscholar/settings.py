@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 import dj_database_url
+from django.conf.urls import url, include
+from django.contrib import admin
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,13 +36,15 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 INSTALLED_APPS = [
     'signup.apps.SignupConfig',
-    'scholarships.apps.ScholarshipsConfig',
+    # 'scholarships.apps.ScholarshipsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'scholarships',
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -127,7 +131,9 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 
 # Extra places for collectstatic to find static files.
