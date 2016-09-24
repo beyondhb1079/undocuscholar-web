@@ -1,0 +1,3545 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "scholarships",
+      "model": "scholarship"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 1,
+    "fields": {
+      "name": "[MOCK] Frank F. Conlon Fellowship",
+      "deadline": "2017-01-01",
+      "amount": 8000,
+      "description": "Applicants must be enrolled in a University of Washington graduate program and qualify for financial aid in the academic year of application.",
+      "website": "http://southasia.washington.edu/students/funding/#Conlon",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.547Z",
+      "date_updated": "2016-09-24T04:04:39.547Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 2,
+    "fields": {
+      "name": "[MOCK] Pride Foundation Scholarship",
+      "deadline": "2017-01-13",
+      "amount": null,
+      "description": "Must be a high school senior or college student. Applicants must be a resident of Alaska, Idaho, Montana, Oregon or Washington but may study elsewhere. Preference is given to students who are self-identified LGBTQ, members of LGBTQ families, or straight allies who have been strongly supportive of the LGBTQ community. All scholarships emphasize demonstrated commitment to equality and civil rights for all people. (Over 50 scholarships by filling out just ONE application)",
+      "website": "http://www.pridefoundation.org/what-we-do/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.591Z",
+      "date_updated": "2016-09-24T04:04:39.591Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 3,
+    "fields": {
+      "name": "[MOCK] Mount Baker Community Club MLK Scholarship",
+      "deadline": "2016-01-22",
+      "amount": 5000,
+      "description": "High school senior, must be a minority, must reside or go to school in the area codes: 9810498108, 98118, 98122, 98134, 98144",
+      "website": "http://www.mountbaker.org/scholarship/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.618Z",
+      "date_updated": "2016-09-24T04:04:39.618Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 4,
+    "fields": {
+      "name": "[MOCK] Education First Scholarship",
+      "deadline": "2016-03-11",
+      "amount": 6500,
+      "description": "High school senior from Cleveland, Chief Sealth, or Rainer Beach High School in Seattle, We guarantee at least one interview for each high school.",
+      "website": "http://www.educationfirst.org/apply-for-scholarship.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.646Z",
+      "date_updated": "2016-09-24T04:04:39.646Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 5,
+    "fields": {
+      "name": "[MOCK] WSAJ Contest Scholarship",
+      "deadline": "2016-03-11",
+      "amount": 2000,
+      "description": "High school seniors, show advocacy in the American justice system, and related issues",
+      "website": "https://www.washingtonjustice.org/index.cfm?pg=scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.668Z",
+      "date_updated": "2016-09-24T04:04:39.668Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 6,
+    "fields": {
+      "name": "[MOCK] ARC of Washington Trust Fund Student Grants",
+      "deadline": "2016-02-28",
+      "amount": 5000,
+      "description": "Upper division or graduate students in school in the states of Washington, Alaska, Oregon or Idaho. Demonstrated interest in the field of intellectual or other developmental disabilities. Student applicants should have a particular career interest in work relating to mental retardation",
+      "website": "http://www.arctrustfund.org/Student-Stipends.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.698Z",
+      "date_updated": "2016-09-24T04:04:39.698Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 7,
+    "fields": {
+      "name": "[MOCK] Nora Stone Smith ESL Scholarship",
+      "deadline": "2016-03-30",
+      "amount": 2000,
+      "description": "Must be a former or current ELL/ESL Student, High school senior",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.722Z",
+      "date_updated": "2016-09-24T04:04:39.722Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 8,
+    "fields": {
+      "name": "[MOCK] City of Destiny Scholarship  (Part of Leadership 1000 Program)",
+      "deadline": "2016-03-07",
+      "amount": null,
+      "description": "A Washington State resident, (qualifying for in-state tuition or eligible for Washington State financial aid programs), living in Tacoma or, will be or already are, a graduate from a Tacoma high school. Planning to attend, or currently attending an eligible four-year college or university, or community or technical college in Washington State. Pursuing a major in science, engineering, energy efficiency, information technology, healthcare sciences, or nursing.",
+      "website": "http://www.collegesuccessfoundation.org/wa/students/leadership1000/tacoma/eligibility?",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.749Z",
+      "date_updated": "2016-09-24T04:04:39.749Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 9,
+    "fields": {
+      "name": "[MOCK] Anne D. Maloof Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 3000,
+      "description": "To honor and financially assist students in Island, Kitsap, Jefferson and Thurston counties.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.775Z",
+      "date_updated": "2016-09-24T04:04:39.775Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 10,
+    "fields": {
+      "name": "[MOCK] Atsuhiko Tateuchi Memorial Scholarship - Tateuchi Foundation",
+      "deadline": "2016-03-01",
+      "amount": 5000,
+      "description": "Students from the Pacific Rim states (Alaska, California, Hawaii, Oregon and Washington) who demonstrate hard work, dedication and sincerity. undergraduate studies only.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.799Z",
+      "date_updated": "2016-09-24T04:04:39.799Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 11,
+    "fields": {
+      "name": "[MOCK] Bernie Minsk Scholarship",
+      "deadline": "2016-03-31",
+      "amount": 10000,
+      "description": "The Bernie Minsk Scholarship is awarded to graduating public high school seniors who currently work with Rainier Scholars. Priority will be given to seniors who attend Garfield High School in Seattle, WA. All students should demonstrate financial need and a strong interest and commitment to mentoring students in the future.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.824Z",
+      "date_updated": "2016-09-24T04:04:39.824Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 12,
+    "fields": {
+      "name": "[MOCK] Bob and Maggie Bergman Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 2500,
+      "description": "This scholarship is granted to Quilcene High School graduating seniors in Quilcene, WA to provide an incentive to continue education in college or trade school.",
+      "website": "http://www.chegg.com/scholarships/bob-and-maggie-bergman-scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.853Z",
+      "date_updated": "2016-09-24T04:04:39.853Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 13,
+    "fields": {
+      "name": "[MOCK] Bob and Maggie Bergman Teacher Recognition Scholarship",
+      "deadline": "2016-03-04",
+      "amount": 2000,
+      "description": "The purpose of this scholarship is to honor and to give financial support to a current teacher in Quilcene or Brinnon School District pursuing continuing education at an accredited educational institution. The Bergman\u00e2\u20ac\u2122s have a strong commitment to the quality of education in the Quilcene area, also offering scholarships to students who continue their education at college or university. By offering this scholarship to teachers, they hope to encourage them to increase their skills and enrich their experience which will, in turn, benefit the students and improve the quality of education in the region.",
+      "website": "http://www.zinch.com/scholarships/bob-and-maggie-bergman-teacher-recognition-scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.886Z",
+      "date_updated": "2016-09-24T04:04:39.886Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 14,
+    "fields": {
+      "name": "[MOCK] Bobbi McCallum Memorial Scholarship",
+      "deadline": "2016-03-15",
+      "amount": 5000,
+      "description": "The scholarship is given on the basis of talent, need and the motivation to pursue a journalism career.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.912Z",
+      "date_updated": "2016-09-24T04:04:39.912Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 15,
+    "fields": {
+      "name": "[MOCK] Doug Struthers Memorial Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 5000,
+      "description": "The purpose of the Doug Struthers Memorial Scholarship is to applaud all students who are performing to their highest capabilities. It is in this spirit that a scholarship fund was created in his memory to help young people learn skills to serve their communities.",
+      "website": "http://www.washboard.org/ScholarshipDetails/The+Seattle+Foundation/2016-2017/Doug+Struthers+Memorial+Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.938Z",
+      "date_updated": "2016-09-24T04:04:39.938Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 16,
+    "fields": {
+      "name": "[MOCK] Doyne M. Green Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 4000,
+      "description": "To support and honor female graduate students of medicine, law or social and public services. This scholarship is available to students who have completed at least one year of graduate work.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.962Z",
+      "date_updated": "2016-09-24T04:04:39.962Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 17,
+    "fields": {
+      "name": "[MOCK] Hawkins Memorial Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 1500,
+      "description": "The purpose of this scholarship is to honor and to give financial support to graduating seniors currently enrolled at Lake Stevens High School who are pursuing a course of study in life sciences, medicine or pharmacy. Preference will be given to students attending the University of Washington.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:39.996Z",
+      "date_updated": "2016-09-24T04:04:39.996Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 18,
+    "fields": {
+      "name": "[MOCK] Hoshino Family Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 2000,
+      "description": "The purpose of the Hoshino Family Scholarship is to honor and to give financial support to a deserving senior demonstrating financial need currently enrolled at Seattle Urban Academy, Rainier Beach High School, Technology Access Foundation (TAF) Academy or Cleveland High School.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.022Z",
+      "date_updated": "2016-09-24T04:04:40.022Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 19,
+    "fields": {
+      "name": "[MOCK] Joan Hill Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 3000,
+      "description": "We offer The Joan Hill Scholarship to honor Joan and her ongoing support and encouragement of others.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.047Z",
+      "date_updated": "2016-09-24T04:04:40.047Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 20,
+    "fields": {
+      "name": "[MOCK] Lambeth Family Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 3000,
+      "description": "The purpose of the Lambeth Family Scholarship is to honor and to give financial support to a deserving student pursuing a degree in engineering, natural sciences, mathematics, computer science or business.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.071Z",
+      "date_updated": "2016-09-24T04:04:40.071Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 21,
+    "fields": {
+      "name": "[MOCK] Linkous Foundation Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 3000,
+      "description": "The Linkous Foundation Scholarship was created in memory of Gary L. Linkous (Columbia High School, Class of 1955). This scholarship will provide financial support for college tuition/education expenses to a deserving senior currently enrolled at Richland or Hanford high schools in Richland, Washington.",
+      "website": "http://www.zinch.com/scholarships/linkous-foundation-scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.096Z",
+      "date_updated": "2016-09-24T04:04:40.096Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 22,
+    "fields": {
+      "name": "[MOCK] Walter H. Meyer - Garry L. White Memorial Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 5000,
+      "description": "This scholarship is directed specifically to returning adult students who are either attending or prepared to attend a 2- or 4-year public or private university, at the graduate or undergraduate level. If attending at the undergraduate level, the applicant must be over the age of 24. If attending at the graduate level, the applicant must be over the age of 30.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.121Z",
+      "date_updated": "2016-09-24T04:04:40.121Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 23,
+    "fields": {
+      "name": "[MOCK] Yuri and Tatsuo Nakata Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 2500,
+      "description": "The purpose of this scholarship is to honor and to give financial support to students of Asian heritage currently enrolled at Roosevelt, Cleveland or Franklin High School in Seattle, Washington.",
+      "website": "http://www.seattlefoundation.org/scholarships/Pages/ScholarshipListing.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.151Z",
+      "date_updated": "2016-09-24T04:04:40.151Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 24,
+    "fields": {
+      "name": "[MOCK] Washington State PTA Scholarship Program",
+      "deadline": "2017-03-01",
+      "amount": 3000,
+      "description": "Graduates from Washington State public high schools beginning their freshman year of post-secondary education in the United States",
+      "website": "http://www.wastatepta.org/programs/scholarship/application.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.175Z",
+      "date_updated": "2016-09-24T04:04:40.175Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 25,
+    "fields": {
+      "name": "[MOCK] Edith K Draham Scholarship for Fiction",
+      "deadline": "2017-02-02",
+      "amount": 1200,
+      "description": "Criteria varies with each scholarship. All applicants must be in the English Department at the University of Washington.",
+      "website": "https://depts.washington.edu/engl/cw/DrahamApp.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.199Z",
+      "date_updated": "2016-09-24T04:04:40.199Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 26,
+    "fields": {
+      "name": "[MOCK] English Department Creative Writing Awards",
+      "deadline": "2016-03-01",
+      "amount": null,
+      "description": "Criteria varies with each scholarship. All applicants must be in the English Department at the University of Washington. Contact the Creative Writing Office for information.",
+      "website": "https://depts.washington.edu/engl/cw/prizes.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.222Z",
+      "date_updated": "2016-09-24T04:04:40.222Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 27,
+    "fields": {
+      "name": "[MOCK] Walter H Meyer - Garry L White Memorial Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 5000,
+      "description": "Be a resident of Washington State and a returning adult students attending or prepared to attend a 2 or 4 year public or private university, at the graduate or undergraduate level. If attending at the undergraduate level applicant must be over the age of 24. If attending at the graduate level applicant must be over the age of 30.",
+      "website": "http://www.washboard.org/ScholarshipDetails/The+Seattle+Foundation/2016-2017/Walter+H+Meyer+-+Garry+L+White+Memorial+Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.245Z",
+      "date_updated": "2016-09-24T04:04:40.245Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 28,
+    "fields": {
+      "name": "[MOCK] C.E. Boucher Memorial Scholarship",
+      "deadline": "2017-03-01",
+      "amount": 3000,
+      "description": "Be attending the School of Engineering at the University of Washington, Washington State University, University of Oregon or Oregon State University. Have a cumulative grade point average of 2.5 or better. Be an Oregon or Washington State resident. Be prepared to use the award in the next academic year to continue at the School of Engineering at the University of Washington, Washington State University, University of Oregon or Oregon State University.",
+      "website": "http://www.collegeplan.org/cpnow/pnwguide/onlineaps/cebonap.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.267Z",
+      "date_updated": "2016-09-24T04:04:40.267Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 29,
+    "fields": {
+      "name": "[MOCK] Danaca Design Jewelry/ Metal Crafting Scholarship",
+      "deadline": "2017-03-01",
+      "amount": 500,
+      "description": "You must be a matriculated student, actively enrolled in a high school or post secondary institution in Washington State. You must be between the ages of 16-24 to qualify. The scholarship is available for new students to Danaca Design only.",
+      "website": "http://www.danacadesign.com/assets/art_stimulus_fund_application_2013.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.292Z",
+      "date_updated": "2016-09-24T04:04:40.292Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 30,
+    "fields": {
+      "name": "[MOCK] Patricia Fisher Endowed Scholarship",
+      "deadline": "2016-03-22",
+      "amount": 2500,
+      "description": "The scholarship fund will help students of color in the Puget Sound region who are pursuing college careers in journalism. Awards are based on scholastic achievement, financial need, community service and a serious interest in print, photo, broadcast journalism or multimedia/ online",
+      "website": "http://www.thewashboard.org/ScholarshipDetails/The+Seattle+Foundation/2016-2017/Patricia+Fisher+Endowed+Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.317Z",
+      "date_updated": "2016-09-24T04:04:40.317Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 31,
+    "fields": {
+      "name": "[MOCK] Washington State Scholarship Foundation",
+      "deadline": "2016-03-01",
+      "amount": 5000,
+      "description": "High school seniors or student with a G.E.D, must be first time entering freshmen. Undocumented students can apply if they submit their parents IRS from 1040 of the taxes 2013.",
+      "website": "http://www.washingtonscholarships.org/index.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.340Z",
+      "date_updated": "2016-09-24T04:04:40.340Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 32,
+    "fields": {
+      "name": "[MOCK] PSBJs Women of Influence - Lytle Enterprises Scholarship",
+      "deadline": "2016-03-25",
+      "amount": 5000,
+      "description": "The Women of Influence Awards celebrate the leadership of women in the business world and in the larger community. This scholarship will enable a woman of potential to develop her leadership and business acumen in a local graduate school of business. In addition to providing financial support toward the scholarship winner\u00e2\u20ac\u2122s education, the members of our stellar and prestigious Women of Influence advisory board will make themselves available to mentor her, providing her with a truly powerful launching pad.",
+      "website": "http://www.washboard.org/ScholarshipDetails/The+Seattle+Foundation/2016-2017/PSBJs+Women+of+Influence+-+Lytle+Enterprises+Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.365Z",
+      "date_updated": "2016-09-24T04:04:40.365Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 33,
+    "fields": {
+      "name": "[MOCK] Women of WSAJ Bar Preparation Scholarship",
+      "deadline": "2016-01-01",
+      "amount": null,
+      "description": "Must be a woman law school grad, must demonstrate financial need, and plan to take bar exam the year of application for scholarship.",
+      "website": "https://www.washingtonjustice.org/index.cfm?pg=Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.397Z",
+      "date_updated": "2016-09-24T04:04:40.397Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 34,
+    "fields": {
+      "name": "[MOCK] Diversity Bar Preparation Scholarship",
+      "deadline": "2016-01-25",
+      "amount": null,
+      "description": "Must be considered part of an under-represented in the legal profession based on disability, gender, race, ethnicity, religion, sexual orientation, gender identity and gender expression.",
+      "website": "https://www.washingtonjustice.org/index.cfm?pg=Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.421Z",
+      "date_updated": "2016-09-24T04:04:40.421Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 35,
+    "fields": {
+      "name": "[MOCK] National Academy of Television Arts and Sciences Northwest College Awards for Excellence",
+      "deadline": "2016-03-21",
+      "amount": null,
+      "description": "Any current or former college student who was involved in the production of a video that meets the video criteria is eligible.",
+      "website": "http://www.natasnw.org/scholarship/scholarship.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.446Z",
+      "date_updated": "2016-09-24T04:04:40.446Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 36,
+    "fields": {
+      "name": "[MOCK] Beyond Dreaming Foundation Scholarship",
+      "deadline": "2016-06-01",
+      "amount": 1000,
+      "description": "Must be an undocumenented Washington State high school senior. Must attend the Beyond HB 1079 Conference",
+      "website": "http://beyondhb1079.org/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.470Z",
+      "date_updated": "2016-09-24T04:04:40.470Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 37,
+    "fields": {
+      "name": "[MOCK] 2016 American Justice Video & Essay Scholarship Program",
+      "deadline": "2016-03-18",
+      "amount": 3000,
+      "description": "This scholarship is available to high school seniors who are residents of the state of Washington and who attend high school in Washington State. Students need not intend to attend a Washington college, but must start college within the next 2 years to receive the scholarship funds.",
+      "website": "https://www.washingtonjustice.org/index.cfm?pg=scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.497Z",
+      "date_updated": "2016-09-24T04:04:40.497Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 38,
+    "fields": {
+      "name": "[MOCK] American Justice Video Scholarship",
+      "deadline": "2016-03-18",
+      "amount": 3000,
+      "description": "This scholarship is available to high school seniors who are residents of the state of Washington and who attend high school in Washington State. Students need not intend to attend a Washington college, but must start college within the next 2 years to receive the scholarship funds.",
+      "website": "https://www.washingtonjustice.org/index.cfm?pg=scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.520Z",
+      "date_updated": "2016-09-24T04:04:40.521Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 39,
+    "fields": {
+      "name": "[MOCK] WSAJ Presidents' Scholarship",
+      "deadline": "2016-03-14",
+      "amount": 2000,
+      "description": "Demonstrated academic achievement and planned advancement toward a degree in an institution of higher learning. A documented need for financial assistance. A history of achievement despite having been a victim of injury or overcoming a disability, handicap, or similar challenge. Residency in Washington State. High school seniors only.",
+      "website": "http://www.collegexpress.com/scholarships/wsaj-presidents-scholarship/2024907/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.547Z",
+      "date_updated": "2016-09-24T04:04:40.547Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 40,
+    "fields": {
+      "name": "[MOCK] Rita Lowe Scholarship",
+      "deadline": "2016-03-15",
+      "amount": 1000,
+      "description": "Any high school student, college student, or professional within Washington State majoring in Mathematics Education and pursuing teaching certification in order to become a professional mathematics educator (teaching mathematics at elementary or secondary 1evel) is eligible to apply.",
+      "website": "http://www.wsmc.net/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.572Z",
+      "date_updated": "2016-09-24T04:04:40.572Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 41,
+    "fields": {
+      "name": "[MOCK] YMCA Scholarship",
+      "deadline": "2013-03-22",
+      "amount": null,
+      "description": "Must be a high school senior who is involved or has been involved in high school program",
+      "website": "",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.596Z",
+      "date_updated": "2016-09-24T04:04:40.596Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 42,
+    "fields": {
+      "name": "[MOCK] Aki Kurose Memorial Scholarship",
+      "deadline": "2016-03-04",
+      "amount": 2000,
+      "description": "High school senior from Seattle Public Schools, must be attending to a Seattle community, technical college OR a Washington state public university, GPA 2.5 or higher",
+      "website": "http://jaclseattle.org/scholarships/aki-kurose-memorial-scholarship/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.620Z",
+      "date_updated": "2016-09-24T04:04:40.620Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 43,
+    "fields": {
+      "name": "[MOCK] Abe Osheroff and Gunnel Clark Endowed Human Rights Fund for Students",
+      "deadline": "2016-04-01",
+      "amount": null,
+      "description": "All undergraduate and graduate students at the University of Washington (Bothell, Seattle, Tacoma) are eligible to apply.  All hands-on human rights projects are eligible, whether the worl involved human rights issues in the United States or elsewhere in the world.",
+      "website": "http://jsis.washington.edu/humanrights/students/osheroffclarkefundforstudents.shtml",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.644Z",
+      "date_updated": "2016-09-24T04:04:40.644Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 44,
+    "fields": {
+      "name": "[MOCK] University of Washington Alumnae Board Scholarship",
+      "deadline": "2015-03-28",
+      "amount": 6000,
+      "description": "Washington State resident who will be University of Washington Seattle (only) incoming freshmen, sophomores, juniors and seniors. Must have a 3.0 GPA and be considered low-income.",
+      "website": "http://www.washington.edu/alumni/meet/groups/uwab/scholarships.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.668Z",
+      "date_updated": "2016-09-24T04:04:40.668Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 45,
+    "fields": {
+      "name": "[MOCK] Seattle Metropolitan Credit Union",
+      "deadline": "0016-07-30",
+      "amount": 2000,
+      "description": "Applicant must be a Seattle Metropolitan Credit Union Member, or a dependent child of a Credit Union Member. Previous scholarship winners are not eligible. Board Members, dependent children of either board directors, or scholarship committee members are not eligible",
+      "website": "http://www.smcu.com/promos/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.692Z",
+      "date_updated": "2016-09-24T04:04:40.692Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 46,
+    "fields": {
+      "name": "[MOCK] Association for Women in Communications (AWC) Scholarship",
+      "deadline": "2016-03-31",
+      "amount": 1500,
+      "description": "Be a registered student at a four-year college in Washington state for fall 2016. Be a junior or senior year in college. Major in at least one communication discipline.",
+      "website": "http://www.awcspringfield.org/scholarship/index.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.716Z",
+      "date_updated": "2016-09-24T04:04:40.716Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 47,
+    "fields": {
+      "name": "[MOCK] Leadership 1000 Scholarship",
+      "deadline": "2016-02-24",
+      "amount": 5000,
+      "description": "High school seniors or college students, must attend a 4 year university in the state of Washington. Must have at least a 3.0 GPA",
+      "website": "http://www.collegesuccessfoundation.org/wa/students/leadership1000/eligibility",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.741Z",
+      "date_updated": "2016-09-24T04:04:40.741Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 48,
+    "fields": {
+      "name": "[MOCK] Alden Landis Memorial Scholarship",
+      "deadline": "0016-02-11",
+      "amount": 3500,
+      "description": "The scholarship is intended for high school students (grades 10-12) who demonstrate financial need and who successfully apply for enrollment in a summer study abroad or service trip run by a 501(c)(3) public charity. Students must demonstrate a commitment to community service and learning about other cultures.",
+      "website": "http://www.washboard.org/ScholarshipDetails/The+Seattle+Foundation/2017-2018/Alden+Landis+Memorial+Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.765Z",
+      "date_updated": "2016-09-24T04:04:40.765Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 49,
+    "fields": {
+      "name": "[MOCK] Sea Mar Community Health Center Farm Worker College Scholarship Application",
+      "deadline": "2016-04-01",
+      "amount": 1000,
+      "description": "Must be a college student who has not previously got the SeaMar high school scholarship. Must show your experiences, hardships, and/or rewards as a member of a farm worker family. Contact at scholarships@seamarchc.org",
+      "website": "http://www.seamar.org/static_pages/farmworkersstudents.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.789Z",
+      "date_updated": "2016-09-24T04:04:40.789Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 50,
+    "fields": {
+      "name": "[MOCK] Sea Mar Community Health Center Farm Worker Scholarship Application",
+      "deadline": "2016-04-01",
+      "amount": 1000,
+      "description": "Students who work or have worked OR, whose parent/legal guardian is or has worked as a farm worker. High school seniors, incoming college students and college students. Contact at scholarships@seamarchc.org",
+      "website": "https://www.ies.org/programs/a-robert.cfm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.813Z",
+      "date_updated": "2016-09-24T04:04:40.813Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 51,
+    "fields": {
+      "name": "[MOCK] Robert W. Thunen Memorial Scholarship",
+      "deadline": "2017-04-01",
+      "amount": 2500,
+      "description": "full-time students who desire to study illumination as a career. Applications for the Thunen Memorial Scholarship may be made by those who will be a junior, senior or graduate student in an accredited four year college or university located in Northern California, Nevada, Oregon or Washington",
+      "website": "https://www.petersons.com/scholarship/robert-w-thunen-memorial-scholarships-111_149972.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.837Z",
+      "date_updated": "2016-09-24T04:04:40.837Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 52,
+    "fields": {
+      "name": "[MOCK] Willie Stewart Community Service Scholarship",
+      "deadline": "2017-04-01",
+      "amount": 2000,
+      "description": "Pierce County high school seniors who have given back to their community through volunteer service. For more information, call (253) 597-6685 or email youthunited@uwpc.org.",
+      "website": "http://www.uwpc.org/Scholarships.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.865Z",
+      "date_updated": "2016-09-24T04:04:40.865Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 53,
+    "fields": {
+      "name": "[MOCK] Lion\u00e2\u20ac\u2122s Club of West Seattle",
+      "deadline": "2016-04-15",
+      "amount": 1000,
+      "description": "High school seniors who live in West Seattle",
+      "website": "http://www.wslions.com/scholar2.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.891Z",
+      "date_updated": "2016-09-24T04:04:40.891Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 54,
+    "fields": {
+      "name": "[MOCK] Gilda's Club Seattle \"It's Always Something\" Cancer Unwrapped Writing Contest ",
+      "deadline": "0016-03-20",
+      "amount": 1000,
+      "description": "This essay writing contest is for any teen in grades 9 through 12, in Washington State, who has been touched by cancer either through a personal diagnosis or that of a family member or friend.",
+      "website": "https://www.gildasclubseattle.org/contactUs/WritingContest.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.915Z",
+      "date_updated": "2016-09-24T04:04:40.915Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 55,
+    "fields": {
+      "name": "[MOCK] Edward E. Carlson Student Leadership Award",
+      "deadline": "2016-04-18",
+      "amount": 2500,
+      "description": "Candidates must be enrolled as a junior or senior at the University of Washington (Bothell, Seattle, and Tacoma) during the current academic year and working toward their first baccalaureate degree. If you have questions about this award, feel free to email engage@uw.edu.",
+      "website": "http://www.washington.edu/carlson/edward-e-carlson-student-leadership-award/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.939Z",
+      "date_updated": "2016-09-24T04:04:40.939Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 56,
+    "fields": {
+      "name": "[MOCK] Charlotte Paul Reese Fiction Award",
+      "deadline": "2016-03-01",
+      "amount": 1200,
+      "description": "Awarded only to a sophomore or junior English major at the University of Washington\n",
+      "website": "https://depts.washington.edu/engl/cw/prizes.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.964Z",
+      "date_updated": "2016-09-24T04:04:40.964Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 57,
+    "fields": {
+      "name": "[MOCK] Geological Sciences Scholarships and Awards",
+      "deadline": "2014-04-05",
+      "amount": null,
+      "description": "Students must have an overall UW GPA of 3.3. Awards vary in amount from $200 to full in-state tuition for 3 quarters. The awards are disbursed as tuition scholarships, research and field course support for declared Earth and Space Sciences Major",
+      "website": "http://www.geophys.washington.edu/ess/education/studentservices/awards.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:40.989Z",
+      "date_updated": "2016-09-24T04:04:40.989Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 58,
+    "fields": {
+      "name": "[MOCK] Dream Without Boundaries Scholarship",
+      "deadline": "2016-04-01",
+      "amount": 2500,
+      "description": "",
+      "website": "http://foundationforvps.org/site_directory/programs/scholarships-for-vancouver-students.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.013Z",
+      "date_updated": "2016-09-24T04:04:41.013Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 59,
+    "fields": {
+      "name": "[MOCK] Rotary Club of University District Scholarship",
+      "deadline": "2016-03-25",
+      "amount": null,
+      "description": "Seattle Public School High School Graduates attending community college in 2014 fall",
+      "website": "http://ingrahamhsseattleschoolsorgmodul.weebly.com/uploads/3/8/0/2/38024207/rotary_club_u_district_scholarship.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.036Z",
+      "date_updated": "2016-09-24T04:04:41.036Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 60,
+    "fields": {
+      "name": "[MOCK] Washington Tech Prep Scholarship",
+      "deadline": "2016-03-15",
+      "amount": null,
+      "description": "High school seniors, attending a Washington State Tech Prep high school, and is entering a Washington State community or technical college in Fall",
+      "website": "https://www.wscc.edu/financial/scholarships.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.059Z",
+      "date_updated": "2016-09-24T04:04:41.059Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 61,
+    "fields": {
+      "name": "[MOCK] Seattle First Hill Lions Club Scholarship",
+      "deadline": "2016-03-08",
+      "amount": 1500,
+      "description": "Seattle Public School High School Graduates attending community college or a university in 2014 fall",
+      "website": "http://roosevelths.seattleschools.org/UserFiles/Servers/Server_7419/File/Services/Counseling%20Center/JuroYoshiokaMemorialScholarship2016.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.085Z",
+      "date_updated": "2016-09-24T04:04:41.085Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 62,
+    "fields": {
+      "name": "[MOCK] Dick Larsen and Herb Robinson Scholarships",
+      "deadline": "2016-04-15",
+      "amount": 1000,
+      "description": "A past graduate of a Washington high school currently enrolled in a public or private college/university in this state and a graduating Washington high-school senior who is entering a public or private college/university in this state.",
+      "website": "http://www.collegeplan.org/cpnow/pnwguide/onlineaps/dlsonap.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.109Z",
+      "date_updated": "2016-09-24T04:04:41.109Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 63,
+    "fields": {
+      "name": "[MOCK] Foster School of Business Undergraduate Business Scholarships",
+      "deadline": "2016-04-15",
+      "amount": 2500,
+      "description": "Must be a full-time undergraduate student at the University of Washington (Seattle) Must average 12 credits per quarter over three quarters, for a total of 36 credits during the awarding year. If you plan to study abroad, you must be concurrently enrolled at the UW to be eligible for scholarships.",
+      "website": "http://www.foster.washington.edu/academic/undergrad/Pages/UndergradScholarships.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.135Z",
+      "date_updated": "2016-09-24T04:04:41.135Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 64,
+    "fields": {
+      "name": "[MOCK] Seattle-Nantes Dollars for Scholars",
+      "deadline": "2016-04-15",
+      "amount": 1000,
+      "description": "Students who intend to major in French or Francophone studies, or will minor in French or take at least two full years of courses, or need a concentration in French to support a program of study, and are members of Seattle Nantes Sister City Association.",
+      "website": "http://www.seattle-nantes.org/      http://www.chegg.com/scholarships/seattle-nantes-dollars-scholars",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.165Z",
+      "date_updated": "2016-09-24T04:04:41.165Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 65,
+    "fields": {
+      "name": "[MOCK] Sally Heet Memorial Scholarship",
+      "deadline": "2016-05-13",
+      "amount": 3500,
+      "description": "Interest and aptitude in public relations demonstrated by courses taken, activities and/or internships. Full-time Washington state sophomore or junior in the 2012-2013 academic year pursuing a career in public relations who will be a full-time junior or senior during the 2013-2014 year at a Washington state college or university. Academic achievement.",
+      "website": "http://www.prsapugetsound.org/Page.aspx?nid=72",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.192Z",
+      "date_updated": "2016-09-24T04:04:41.192Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 66,
+    "fields": {
+      "name": "[MOCK] Fritz Scholarship",
+      "deadline": "2016-05-10",
+      "amount": 5000,
+      "description": "Funding for study abroad. Student must be UW undergraduate student, Humanities or social science major at the time of application, 3.0 cumulative GPA.",
+      "website": "http://expd.washington.edu/globalopportunities/fritz-go-eligibility.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.217Z",
+      "date_updated": "2016-09-24T04:04:41.217Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 67,
+    "fields": {
+      "name": "[MOCK] Yakima Valley Human Rights Scholarship",
+      "deadline": "2016-05-01",
+      "amount": 700,
+      "description": "GED.Emphasis is given to persons of ethnic minority who exhibit promise in scholarship. Applicants must plan to attend an accredited college, university, business school or trade school.",
+      "website": "http://www.semy.org/wapass123/cms/special_interest/documents/2013%20Yakima%20Valley%20Human%20Rights%20Scholarship.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.245Z",
+      "date_updated": "2016-09-24T04:04:41.245Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 68,
+    "fields": {
+      "name": "[MOCK] African American-Jewish Coalition June R. Chaus Scholarship",
+      "deadline": "0016-06-10",
+      "amount": 1500,
+      "description": "Have been admitted to an approved undergraduate or graduate institution in the Pacific Northwest. Are pursuing studies in human services, health care, education, public affairs or a related field. Are considered to be minority students, based on race, ethnicity, religious affiliation or sexual orientation. Application plus a one page personal essay.",
+      "website": "http://www.skagit.edu/news.asp_Q_pagenumber_E_1341",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.269Z",
+      "date_updated": "2016-09-24T04:04:41.269Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 69,
+    "fields": {
+      "name": "[MOCK] New Car and Truck Dealers Make a Difference Scholarship",
+      "deadline": "2016-04-15",
+      "amount": 2500,
+      "description": "Only high school seniors enrolled in a Washington State public or private high school, as well as those who are home-schooled and reside in Washington State, are eligible to enter. The Student Information/Release Form must be included which provides student and school information, parent permission and statement of originality from student and a teacher/advisor. ",
+      "website": "http://www.wsada.org/community_contributions/scholarships.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.296Z",
+      "date_updated": "2016-09-24T04:04:41.296Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 70,
+    "fields": {
+      "name": "[MOCK] Association for Women in Science Undergraduate Scholarship - Seattle Chapter - Requires Social Security",
+      "deadline": "2016-03-15",
+      "amount": 5000,
+      "description": "Open to women who will be juniors or seniors at a four-year college or university in the state of Washington in the Fall. Applicants must have a declared major in STEM. Applicants shall have exemplary grades, outstanding letters of recommendation, financial need, a record of community service, and a strong interest in pursuing a career in STEM",
+      "website": "http://seattleawis.org/award/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.321Z",
+      "date_updated": "2016-09-24T04:04:41.321Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 71,
+    "fields": {
+      "name": "[MOCK] Seattle Association of Educational Office Professionals Scholarship",
+      "deadline": "0016-07-01",
+      "amount": 500,
+      "description": "All interested and qualified male or female students graduating from a Seattle Public High school who wish to continue their education at a 2 year or 4 year college or vocational school.",
+      "website": "http://www.saeop.org/index.php/wea-scholarships/saeop-scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.345Z",
+      "date_updated": "2016-09-24T04:04:41.345Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 72,
+    "fields": {
+      "name": "[MOCK] HCDE Sakson Diversity Undergraduate Scholarship",
+      "deadline": "2016-05-01",
+      "amount": null,
+      "description": "Current UW student majoring in Human Centered Design & Engineering (HDCE), or current UW student applying to major in HCDE, or applicant to UW and the HCDE program. Full time undergraduate student. Academic achievement. Demonstrated interest/understanding of HCDE. Demonstrated understanding or experience with diverse and/or cultural issues. ",
+      "website": "http://www.hcde.washington.edu/sakson",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.369Z",
+      "date_updated": "2016-09-24T04:04:41.369Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 73,
+    "fields": {
+      "name": "[MOCK] George and Pearl Corkery Memorial Scholarship",
+      "deadline": "2016-05-06",
+      "amount": 1000,
+      "description": "Scholarship is awarded on the basis of academic merit to outstanding junior undergraduate students at the University of Washington. Applicants must have been accepted as an Economics major.",
+      "website": "https://econ.washington.edu/scholarships-and-financial-support",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.395Z",
+      "date_updated": "2016-09-24T04:04:41.395Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 74,
+    "fields": {
+      "name": "[MOCK] Eleanor Davis Pinkham Scholarship",
+      "deadline": "2016-04-22",
+      "amount": 4000,
+      "description": "The scholarship will be awarded to a Roosevelt High School graduate entering the University of Washington as a freshman. Selection will be based on the student's academic achievement and extracurricular involvement at Roosevelt High School. 3 short essays, a letter of recommendation, and transript are included in the application",
+      "website": "http://expd.washington.edu/scholarships/search/search-results-public.html?page_stub=pinkham",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.420Z",
+      "date_updated": "2016-09-24T04:04:41.420Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 75,
+    "fields": {
+      "name": "[MOCK] Seattle Swedish Community Scholarship",
+      "deadline": "2016-05-21",
+      "amount": 3500,
+      "description": "Must be a high school senior, attend high school in King County, and reside in King County, Washington. Must submit completed application, transcript, ACT or SAT score, and information about family income (include a copy of pp. 1\u00e2\u20ac\u201c2 of 2011 income tax statement), and a self-addressed, stamped envelope in order to receive notification of results. Note: Swedish ancestry not required.",
+      "website": "http://swedishclubnw.org/scholarships.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.445Z",
+      "date_updated": "2016-09-24T04:04:41.445Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 76,
+    "fields": {
+      "name": "[MOCK] Cleveland High School Alumni Association Scholarship",
+      "deadline": "2016-05-02",
+      "amount": 5000,
+      "description": "Must be a senior from Cleveland High School",
+      "website": "http://www.clevelandalumsea.org/scholarship.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.469Z",
+      "date_updated": "2016-09-24T04:04:41.469Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 77,
+    "fields": {
+      "name": "[MOCK] Richard E. Fitzner Memorial Scholarship for Wildlife Biology",
+      "deadline": "2016-12-15",
+      "amount": 2500,
+      "description": "Of junior or senior standing at a college or university in Washington. Must be  pursuing a degree in Biology or a Biology-related field.",
+      "website": "http://wildlife.org/washington-chapter/grants-scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.493Z",
+      "date_updated": "2016-09-24T04:04:41.493Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 78,
+    "fields": {
+      "name": "[MOCK] Sewer/Water Utility Scholarship",
+      "deadline": "2016-07-01",
+      "amount": 1000,
+      "description": "Employee\u00e2\u20ac\u2122s, Elected Officials or Immediate family member of WASWD Members or any Washington State Resident. Course work must be related to the sewer and/or water industry. Applicants are encouraged but not required to be sponsored by a Sewer and/or Water District in the area of their residence. Must be a full or part-time student. Attendance at an accredited college, university or technical school. Pursuit of a degree; Associates, Bachelors, Masters or Doctorate",
+      "website": "https://www.waswd.org/sites/default/files/fileattachments/public/page/13581/scholarship_application_packet_2016.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.518Z",
+      "date_updated": "2016-09-24T04:04:41.518Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 79,
+    "fields": {
+      "name": "[MOCK] Washington Financial Aid Association Ethnic Awareness Committee Scholarship",
+      "deadline": "2014-09-06",
+      "amount": 1500,
+      "description": "Students of color enrolled in a WA state college. GPA 3.0 or higher, show leadership",
+      "website": "http://www.wfaa.org/docs/students/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.543Z",
+      "date_updated": "2016-09-24T04:04:41.543Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 80,
+    "fields": {
+      "name": "[MOCK] Governors' Scholarship for Foster Youth",
+      "deadline": "2017-03-07",
+      "amount": 4000,
+      "description": "Be recognized as a dependent youth in foster care or kinship care in Washington State, federal or tribal out-of-home care. Be enrolled as a Washington State high school senior and on track to graduate from high school. Have resided in Washington State for at least three academic years prior to high school graduation. Have a cumulative high school GPA of at least a 2.0",
+      "website": "http://www.collegesuccessfoundation.org/wa/scholarships/governors",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.568Z",
+      "date_updated": "2016-09-24T04:04:41.568Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 81,
+    "fields": {
+      "name": "[MOCK] LEAP 1% Scholarship",
+      "deadline": "2016-10-15",
+      "amount": 5000,
+      "description": "The LEAP1% Scholarship Fund provides financial support for students who demonstrate a history of advocacy, responsibility, accountability, and perseverance; are go-getters, and have shown or have the strong potential to be contributors to their community. All scholarships are open to all aspiring college and graduate students who meet our eligibility requirements below.",
+      "website": "http://www.leapwa.org/resources/resources.asp",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.592Z",
+      "date_updated": "2016-09-24T04:04:41.592Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 82,
+    "fields": {
+      "name": "[MOCK] Central Washington University - LEAP Scholarship",
+      "deadline": "2016-10-15",
+      "amount": 5000,
+      "description": "Scholarship is open to students who will attend Central Washington University during the 2016-17 school year. Must meet similar requirements of LEAP1% Scholarship.",
+      "website": "http://www.leapwa.org/resources/resources.asp",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.616Z",
+      "date_updated": "2016-09-24T04:04:41.616Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 83,
+    "fields": {
+      "name": "[MOCK] Phyllis Gutierrez Kenney Leadership Award",
+      "deadline": "2016-10-15",
+      "amount": 3000,
+      "description": "Scholarship is named in honor of former Latina state representative Phyllis Gutierrez Kenney and will be awarded to a student who attends North Seattle College during the 2016-17 school year. Must meet similar requirements of LEAP1% Scholarship.",
+      "website": "http://www.leapwa.org/resources/resources.asp",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.640Z",
+      "date_updated": "2016-09-24T04:04:41.640Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 84,
+    "fields": {
+      "name": "[MOCK] University of Washington Tacoma - LEAP Scholarship",
+      "deadline": "2016-10-15",
+      "amount": 5000,
+      "description": "Scholarship is open to a student who attends the University of Washington Tacoma during the 2016-17 school year. Must meet similar requirements of LEAP1% Scholarship.",
+      "website": "http://www.leapwa.org/resources/resources.asp",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.660Z",
+      "date_updated": "2016-09-24T04:04:41.661Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 85,
+    "fields": {
+      "name": "[MOCK] The Paul & Daisy Soros Felloships For New Americans",
+      "deadline": "2016-11-01",
+      "amount": 40000,
+      "description": "The competition is merit-based. Selection criteria emphasize creativity, originality, initiative, and sustained accomplishment. The program values a commitment to the Constitution and the Bill of Rights. The program does not have any quotas for types of degrees, universities or programs, countries of origin, or gender, etc.",
+      "website": "http://www.pdsoros.org/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.688Z",
+      "date_updated": "2016-09-24T04:04:41.688Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 86,
+    "fields": {
+      "name": "[MOCK] P.E.O. Sisterhood - AO Chapter",
+      "deadline": "2013-11-30",
+      "amount": 750,
+      "description": "Be female. Display leadership roles in school and/or community. Have a GPA of at least a 3.0. Show financial need. Attend an accredited institution. Preference will be given to those students living in Western Washington and pursuing degrees in health-related fields.",
+      "website": "http://www.peointernational.org/about-peo-star-scholarship-star",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.713Z",
+      "date_updated": "2016-09-24T04:04:41.713Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 87,
+    "fields": {
+      "name": "[MOCK] Soroptimist Pasco-Kennewick Violet Richardson Award",
+      "deadline": "2013-12-12",
+      "amount": 400,
+      "description": "Young woman between the ages of 14 and 17 who volunteers their community or school in Benton or Franklin counties",
+      "website": "",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.742Z",
+      "date_updated": "2016-09-24T04:04:41.742Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 88,
+    "fields": {
+      "name": "[MOCK] Seattle Hiroshima Club",
+      "deadline": "2015-10-31",
+      "amount": 1000,
+      "description": "One of the student\u00e2\u20ac\u2122s parent(s), grandparent(s), great-grandparent(s) or relative must be from Hiroshima Prefecture. The parent or guardian must be a current paid member of the Seattle Hiroshima Club by October 31, 2014. The applicant is graduating from high school and the latest high school transcript reflects a cumulative GPA of 3.8 or higher. ",
+      "website": "http://www.bsd405.org/interlake/wp-content/uploads/sites/8/2015/09/Seattle-Hiroshima-Club-Scholarship.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.766Z",
+      "date_updated": "2016-09-24T04:04:41.766Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 89,
+    "fields": {
+      "name": "[MOCK] Imagine America Scholarship Program",
+      "deadline": "2016-12-31",
+      "amount": null,
+      "description": "Likelihood of successful completion of postsecondary education, high school grade point average of 2.5 or greater, financial need, and demonstrated voluntary community service during senior year  ",
+      "website": "http://www.imagine-america.org/highschoolscholarships",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.791Z",
+      "date_updated": "2016-09-24T04:04:41.791Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 90,
+    "fields": {
+      "name": "[MOCK] Friends of Secondary Bilingual Orientation Center",
+      "deadline": "2016-05-10",
+      "amount": 2500,
+      "description": "Any student who attended the SBOC/Seattle World School since 2007 is eligible for scholarships after graduation from a Seattle high school.",
+      "website": "http://friendsofseattleworldschool.com/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.814Z",
+      "date_updated": "2016-09-24T04:04:41.814Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 91,
+    "fields": {
+      "name": "[MOCK] Washington State School Retirees' Association",
+      "deadline": "2016-03-02",
+      "amount": 1500,
+      "description": "The Washington State School Retirees' Association (WSSRA) invites senior students of your school who have a GPA of 3.0 or higher to apply for the above scholarships. These awards are given to students who wish to have a career in the field of education. Their degree could be in one of these majors: teacher, counselor, speech therapist, occupational therapist, or psychologist. ",
+      "website": "http://wssra.org/scholarshipform/scholarship_memo.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.838Z",
+      "date_updated": "2016-09-24T04:04:41.838Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 92,
+    "fields": {
+      "name": "[MOCK] Kids Chance of Washington",
+      "deadline": "2016-11-01",
+      "amount": null,
+      "description": "This scholarship is available to spouses or children of injured Washington workers whose injury, while at work in Washington State, resulted in a permanent inability to return to work (a pension under the claim) or death. Money is available for college undergraduates, technical school students, high school students participating in a Running Start program, or other accredited schools.",
+      "website": "http://kidschancewa.com/application/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.862Z",
+      "date_updated": "2016-09-24T04:04:41.862Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 93,
+    "fields": {
+      "name": "[MOCK] Susan Jane Russell College Scholarship",
+      "deadline": "2016-01-12",
+      "amount": 1000,
+      "description": "Outstanding high school senior art student who plans on attending a community college, college, university, or art school in the fall of 2014, majoring in the visual arts, arts education or an art related focus.",
+      "website": "http://www.schack.org/student-awards-contests/susan-jane-russell-college-scholarship/2016/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.888Z",
+      "date_updated": "2016-09-24T04:04:41.888Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 94,
+    "fields": {
+      "name": "[MOCK] Jane M. Klausman Scholarship: Women in Business ",
+      "deadline": "2016-05-16",
+      "amount": 5000,
+      "description": "Applicants must apply to their local Zonta Club. Club winners proceed to the District Level where one applicant is chosen to be the District winner and our candidate for one of the International scholarships They will be in their third or fourth year of undergraduate business study. Applicants must demonstrate intent to complete a program in business and show outstanding achievement in business related subjects as recorded on the official university/college/institute transcript.",
+      "website": "http://www.zonta.org/Local-Action/Locate-a-Club/region/WA/country/US",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.912Z",
+      "date_updated": "2016-09-24T04:04:41.912Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 95,
+    "fields": {
+      "name": "[MOCK] Fire's Freedom in Academia Essay Contest",
+      "deadline": "2016-01-01",
+      "amount": 10000,
+      "description": "High school juniors and seniors for the 2015-2016 school year are eligible to participate in FIRE's essay contest.",
+      "website": "http://www.thefire.org/student-network/essay-contest/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.937Z",
+      "date_updated": "2016-09-24T04:04:41.937Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 96,
+    "fields": {
+      "name": "[MOCK] MALDEF's Law School Scholarship Program",
+      "deadline": "2016-02-15",
+      "amount": 5000,
+      "description": "Must be enrolled in a law school,",
+      "website": "http://maldef.org/leadership/scholarships/law_school_scholarship_program/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.961Z",
+      "date_updated": "2016-09-24T04:04:41.961Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 97,
+    "fields": {
+      "name": "[MOCK] Burger King Scholars",
+      "deadline": "2016-12-15",
+      "amount": 50000,
+      "description": "These scholarships can be used for college, community college, vocational school, technical school (or pretty much any other post-secondary institution!).",
+      "website": "https://www.scholarshipamerica.org/burgerkingscholars/register.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:41.985Z",
+      "date_updated": "2016-09-24T04:04:41.985Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 98,
+    "fields": {
+      "name": "[MOCK] Point Foundation: College Scholarships for LGBTQ Students",
+      "deadline": "2017-01-19",
+      "amount": null,
+      "description": "Students who have academic achievement, personal merit, leadership, involvement in the LGBTQ community, professional experiences, financial need, marginalization, personal and future goals are all taken into consideration. High School Senior",
+      "website": "https://www.pointfoundation.org/point-apply/apply-now/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.009Z",
+      "date_updated": "2016-09-24T04:04:42.010Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 99,
+    "fields": {
+      "name": "[MOCK] Gary Yoshimura Scholarship- PRSSA",
+      "deadline": "2016-01-26",
+      "amount": 2400,
+      "description": "Be pursuing a higher education in the public relations field. Have a minimum 3.0 GPA. Be a PRSSA member.",
+      "website": "http://www.prssa.org/scholarships_competitions/individual/yoshimura/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.034Z",
+      "date_updated": "2016-09-24T04:04:42.034Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 100,
+    "fields": {
+      "name": "[MOCK] The Sam and Helen R. Walton Award",
+      "deadline": "2015-01-31",
+      "amount": 50000,
+      "description": "Congregations, presbyteries and synods to nominate new church developments that are working in creative ways to bring the gospel to their local communities.",
+      "website": "http://www.presbyterianmission.org/ministries/missionprogramgrants/sam-and-helen-r-walton-award/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.059Z",
+      "date_updated": "2016-09-24T04:04:42.059Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 101,
+    "fields": {
+      "name": "[MOCK] The Princeton Prize in Race Relations",
+      "deadline": "2016-01-31",
+      "amount": 1000,
+      "description": "Must be a high school student in the participating regions (Seattle is one of them)",
+      "website": "http://www.princeton.edu/pprize/application/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.083Z",
+      "date_updated": "2016-09-24T04:04:42.083Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 102,
+    "fields": {
+      "name": "[MOCK] AWM Essay Contest",
+      "deadline": "2016-01-10",
+      "amount": null,
+      "description": "Students in middle school, high school, and college undergrads",
+      "website": "https://sites.google.com/site/awmmath/programs/essay-contest",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.110Z",
+      "date_updated": "2016-09-24T04:04:42.110Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 103,
+    "fields": {
+      "name": "[MOCK] Yukon & Clemence Chow Scholarship",
+      "deadline": "2013-02-01",
+      "amount": 1000,
+      "description": "Full-time undergraduate or graduate student with financial need. Evidence the appropriate academic record and motivation",
+      "website": "",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.135Z",
+      "date_updated": "2016-09-24T04:04:42.135Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 104,
+    "fields": {
+      "name": "[MOCK] Ellen Masin Persina Scholarship for Minorities in Journalism",
+      "deadline": "2016-03-01",
+      "amount": 2500,
+      "description": "Journalism (newspapers, radio, TV, magazine, trade paper) Scholarships for talented minorities",
+      "website": "http://www.press.org/about/students",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.162Z",
+      "date_updated": "2016-09-24T04:04:42.163Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 105,
+    "fields": {
+      "name": "[MOCK] Joe Francomano Scholarship",
+      "deadline": "2016-02-01",
+      "amount": 5000,
+      "description": "Be high school seniors graduating before June 30th, \n-Have minimum grade point averages of 3.0 on a 4.0 scale \n- Have demonstrated leadership and excellent extracurricular and community activities\n- Financial need",
+      "website": "https://www.juniorachievement.org/web/ja-usa/joe-francomano-scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.184Z",
+      "date_updated": "2016-09-24T04:04:42.184Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 106,
+    "fields": {
+      "name": "[MOCK] Frank Kazmierczak Memorial Migrant Scholarship",
+      "deadline": "2017-02-01",
+      "amount": 1000,
+      "description": "Post-secondary scholarship assistance to a migrant student who wishes to pursue a career in teaching.",
+      "website": "http://www.migrant.net/migrant/scholarships/kazmierczak.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.208Z",
+      "date_updated": "2016-09-24T04:04:42.208Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 107,
+    "fields": {
+      "name": "[MOCK] American Physiological Society Undergraduate Summer Research Fellowship",
+      "deadline": "2017-02-01",
+      "amount": 4000,
+      "description": "Applicants must have an over-all GPA of 3.0. Applicants must be full-time undergraduate students with little or no laboratory research experience. The laboratory host must be an APS member in good standing. Selection of participants is based on academic merit and the availability of appropriate faculty mentors. Special consideration is given to applicants whose socioeconomic background, access to educational opportunities, and other life experiences suggest that they would especially benefit from this type of program.",
+      "website": "http://www.the-aps.org/mm/Education/Undergraduate/Educational-Projects/UGSRFs/Application-Information",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.236Z",
+      "date_updated": "2016-09-24T04:04:42.236Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 108,
+    "fields": {
+      "name": "[MOCK] Best Buy @15 Scholarship Program",
+      "deadline": "2017-02-15",
+      "amount": 1000,
+      "description": " Applicants must be currently in grades 9-12 living in the United States or Puerto Rico, have a minimum cumulative GPA of 2.5 (on a 4.0 scale), and demonstrate commitment to and involvement in community volunteer service or work experience. Selection is based on academic performance and exemplary community volunteer service or work experience. Consideration may also be given to participation and leadership in school activities. Financial need is not considered. Best Buy employees and relatives of employees who meet the requirements are eligible to apply.  ",
+      "website": "http://www.studentscholarshipsearch.com/scholarships/best-buy-15-scholarship-program.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.261Z",
+      "date_updated": "2016-09-24T04:04:42.261Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 109,
+    "fields": {
+      "name": "[MOCK] SPIE Scholarship Program",
+      "deadline": "2016-09-20",
+      "amount": 11000,
+      "description": "Must be a Student Member of SPIE.",
+      "website": "http://spie.org/x1733.xml",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.286Z",
+      "date_updated": "2016-09-24T04:04:42.286Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 110,
+    "fields": {
+      "name": "[MOCK] UFCW Local 21 Scholarship",
+      "deadline": "2016-04-01",
+      "amount": null,
+      "description": "In order to be eligible for a scholarship, you must be a current member of UFCW 21, or the dependent, spouse, or domestic",
+      "website": "http://static1.squarespace.com/static/5418aa2ce4b097579b5c27e5/t/54fe1b9ce4b0e762cd9df437/1425939356656/2015+Scholarship+App.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.310Z",
+      "date_updated": "2016-09-24T04:04:42.310Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 111,
+    "fields": {
+      "name": "[MOCK] Society of Plastics Engineers Scholarship",
+      "deadline": "2016-05-16",
+      "amount": null,
+      "description": "The SPE Foundation, an affiliate of the Society of Plastics Engineers, offers numerous scholarships to students who have demonstrated or expressed an interest in the plastics industry. They must be majoring in or taking courses that would be beneficial to a career in the plastics industry. This would include, but is not limited to, plastics engineering, polymer science, chemistry, physics, chemical engineering, mechanical engineering, and industrial engineering. All applicants must be in good standing with their colleges.",
+      "website": "http://www.4spe.org/Leadership/Content.aspx?ItemNumber=6514",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.339Z",
+      "date_updated": "2016-09-24T04:04:42.339Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 112,
+    "fields": {
+      "name": "[MOCK] Hyperthermia - International HyTech Leadership Scholarship",
+      "deadline": "2016-02-15",
+      "amount": 2500,
+      "description": "Awarded to a graduate student pursuing an advanced degree in engineering management within the welding and cutting industry. Applicant must have completed a BS degree or be in the final year. Needs to create login account. ",
+      "website": "https://scholarship.aws.org/applications/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.364Z",
+      "date_updated": "2016-09-24T04:04:42.364Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 113,
+    "fields": {
+      "name": "[MOCK] Matsuo Bridge Company, Ltd. of Japan Scholarship",
+      "deadline": "2016-02-15",
+      "amount": 2500,
+      "description": "Applicatn must be a minimum of 18 years of age; must have a high school diploma; have a 3.0 GPA average; must be enrolled full time in an accredited college or university in the U.S. Must create a profile in American Welding Society Scholarship Application System. The award will be available to students nationwide; however, priority will be given to individuals residing in the states of California, Texas, Oregon or Washington. (A resident is defined as having lived in a specified area for a minimum of one year.)",
+      "website": "https://scholarship.aws.org/applications/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.389Z",
+      "date_updated": "2016-09-24T04:04:42.389Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 114,
+    "fields": {
+      "name": "[MOCK] Past President Scholarship",
+      "deadline": "2016-02-15",
+      "amount": 2500,
+      "description": "Individuals who have served as AWS President, supplemented by contributions from the American Welding Society, in recognition of the years of dedication given by those who have served as President.",
+      "website": "https://www.aws.org/foundation/scholarships/past_presidents.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.418Z",
+      "date_updated": "2016-09-24T04:04:42.418Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 115,
+    "fields": {
+      "name": "[MOCK] James A. Turner, Jr., Memorial Scholarship",
+      "deadline": "2016-02-15",
+      "amount": 3500,
+      "description": "Awarded to a full-time student pursuing a minimum four-year bachelor of business degree, leading to a management career in welding store operations or a welding distributorship. Applicants must have at least a high school diploma and be employed by a welding store or distributorship at least 10 hours a week. Must create a profile in American Welding Society Scholarship Application System",
+      "website": "http://www.aws.org/foundation/scholarships/turner.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.441Z",
+      "date_updated": "2016-09-24T04:04:42.441Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 116,
+    "fields": {
+      "name": "[MOCK] ISA Educational Foundation Scholarships",
+      "deadline": "2016-02-15",
+      "amount": 5000,
+      "description": "Recipients of awards are full-time college or university students in either a graduate, undergraduate, or 2 yr. degree program with at least an overall GPA of 2.5 on a 4.0 scale. Students should be enrolled in a program in automation and control or a closely related field.",
+      "website": "https://www.isa.org/students/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.466Z",
+      "date_updated": "2016-09-24T04:04:42.466Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 117,
+    "fields": {
+      "name": "[MOCK] National Commission for Cooperative Education",
+      "deadline": "2016-02-15",
+      "amount": 6000,
+      "description": "Have a cumulative high school GPA of 3.5 or better on a 4.0 scale. Apply and be accepted for the 2013-2014 academic year at one of the WACE Partner Institutions listed.",
+      "website": "http://www.waceinc.org/scholarship/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.492Z",
+      "date_updated": "2016-09-24T04:04:42.492Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 118,
+    "fields": {
+      "name": "[MOCK] Dr. Flowers MCAT Scholarship (Latino Medical Student Association)",
+      "deadline": "2013-02-16",
+      "amount": null,
+      "description": "Pre-Medical Student LMSA Members. Register on-line as a Pre-Medical LMSA member, demonstrate a history of leadership and/ or service to the Latino Community, and be in good 10 academic standing at your undergraduate institution: Stanford School of Medicine, UC San Diego, UC Davis, UC San Francisco, UC Irvine, University of Arizona, UCLA, University of Southern California, UCLA\u00e2\u20ac\u201c Charles Drew School of Medicine, University of Utah, Western University of Health Sciences, University of Washington, OHSU",
+      "website": "",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.515Z",
+      "date_updated": "2016-09-24T04:04:42.515Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 119,
+    "fields": {
+      "name": "[MOCK] Vegetarian Resource Group Scholarship",
+      "deadline": "2016-02-20",
+      "amount": 5000,
+      "description": "U.S. high school students who have promoted vegetarianism in their schools and/or communities.",
+      "website": "https://www.vrg.org/student/scholar.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.540Z",
+      "date_updated": "2016-09-24T04:04:42.540Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 120,
+    "fields": {
+      "name": "[MOCK] Que Llueva Caf\u00c3\u00a9 Scholarship",
+      "deadline": "2015-02-28",
+      "amount": 500,
+      "description": "High school senior, must be undocumented",
+      "website": "http://ca-core.org/que_llueva_cafe_scholarship_program",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.565Z",
+      "date_updated": "2016-09-24T04:04:42.565Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 121,
+    "fields": {
+      "name": "[MOCK] The Lowe\u00e2\u20ac\u2122s Scholarship",
+      "deadline": "2014-02-28",
+      "amount": 2500,
+      "description": "high school seniors who intend to enroll full-time in an undergraduate course of study in the U'S, must have a 3.25 GPA of above",
+      "website": "http://www.lowes.com/cd_Scholarships_742166982_",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.590Z",
+      "date_updated": "2016-09-24T04:04:42.590Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 122,
+    "fields": {
+      "name": "[MOCK] Optimist International Essay Contest",
+      "deadline": "2016-02-28",
+      "amount": 2500,
+      "description": "Youth under the age of 19 who have not yet graduated from high school or the equivalent.",
+      "website": "http://www.optimist.org/e/member/scholarships3.cfm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.614Z",
+      "date_updated": "2016-09-24T04:04:42.614Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 123,
+    "fields": {
+      "name": "[MOCK] Society of Plastic Engineers Scholarship Program",
+      "deadline": "2014-03-30",
+      "amount": 6000,
+      "description": "full-time undergraduate students in either a four-year college or a two-year technical program or enrolled in a graduate program. Demonstrate financial need,  must be majoring in or taking courses that are beneficial to a career in the plastics/polymer industry.",
+      "website": "http://www.4spe.org/scholarship-eligibility",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.638Z",
+      "date_updated": "2016-09-24T04:04:42.638Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 124,
+    "fields": {
+      "name": "[MOCK] Aweber Email Marketing Scholarship",
+      "deadline": "2016-05-01",
+      "amount": 1000,
+      "description": "High school seniors, full-time college freshman, sophomores, and juniors",
+      "website": "http://www.aweber.com/email-marketing-scholarship.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.662Z",
+      "date_updated": "2016-09-24T04:04:42.662Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 125,
+    "fields": {
+      "name": "[MOCK] Washington State Opporunity Scholarship",
+      "deadline": "2016-02-29",
+      "amount": 7500,
+      "description": "The Washington State Opportunity Scholarship (WSOS) supports low- and middle-income students pursuing eligible, high-demand majors in science, technology, engineering and mathematics (STEM) and health care, and encourages recipients to work in Washington state once they complete their degrees. Must be a Washington state resident and have earned a high school dimploma or GED from a Washington State high school or instititution. ",
+      "website": "https://www.waopportunityscholarship.org/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.685Z",
+      "date_updated": "2016-09-24T04:04:42.685Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 126,
+    "fields": {
+      "name": "[MOCK] Glenn Miller Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 4000,
+      "description": "Must be instrumentalists or vocalist.",
+      "website": "http://glennmiller.org/scholarship/scholarship-information/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.707Z",
+      "date_updated": "2016-09-24T04:04:42.707Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 127,
+    "fields": {
+      "name": "[MOCK] Blacks at Microsoft Scholarships",
+      "deadline": "2016-03-01",
+      "amount": 5000,
+      "description": "Be a high-school senior of African descent (for example, African American, African, or Ethiopian). Plan to attend a four-year college or university in the fall of the year following high-school graduation. Plan to pursue a bachelor's degree in engineering, computer science, computer information systems, or select business programs Have a cumulative GPA of 3.3 or higher. Require financial assistance to attend college.",
+      "website": "https://www.microsoft.com/en-us/diversity/programs/blacks-scholarships.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.730Z",
+      "date_updated": "2016-09-24T04:04:42.731Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 128,
+    "fields": {
+      "name": "[MOCK] Barbara Wiedner and Dorothy Vandercook Peace Scholarship",
+      "deadline": "2016-03-01",
+      "amount": 500,
+      "description": "High school senior or college freshman. Be related to peace and social justice, nuclear disarmament, and/or conflict resolution.",
+      "website": "http://peacescholarships.org/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.755Z",
+      "date_updated": "2016-09-24T04:04:42.755Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 129,
+    "fields": {
+      "name": "[MOCK] SEG Foundation Scholarships",
+      "deadline": "2016-03-01",
+      "amount": 14000,
+      "description": "A student must meet one of the following requirements: Attending high school and planning to enter college next fall. An undergraduate or graduate college student whose grades are above average. A student must intend to pursue a college curriculum directed toward a career in applied geophysics or a closely related field, such as geosciences, physics, geology, or earth and environmental sciences",
+      "website": "http://www.seg.org/web/foundation/programs/scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.780Z",
+      "date_updated": "2016-09-24T04:04:42.780Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 130,
+    "fields": {
+      "name": "[MOCK] Society of Exploration Geophysics Foundation",
+      "deadline": "2016-03-01",
+      "amount": 14000,
+      "description": "High school senior, college graduates and undergraduates with a GPA above average, student must intend to pursue a college curriculum directed toward a career in applied geophysics or a closely related field.",
+      "website": "same as top scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.805Z",
+      "date_updated": "2016-09-24T04:04:42.805Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 131,
+    "fields": {
+      "name": "[MOCK] United Agribusiness League & United Agricultural Scholarship",
+      "deadline": "0016-10-03",
+      "amount": null,
+      "description": "Applicants must be affiliated with UAL or UABT, either through a member or an employee of a member. GPA 2.5 or higher",
+      "website": "https://www.unitedag.org/education-and-youth/scholarship-application/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.829Z",
+      "date_updated": "2016-09-24T04:04:42.829Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 132,
+    "fields": {
+      "name": "[MOCK] Japanese American Citizens League Entering Awards",
+      "deadline": "2015-03-01",
+      "amount": null,
+      "description": "Every applicant must be an active National JACL member. JACL Membership is open to everyone of any ethnic background. Full time at a college, university, trade school, business school, or any other institution of higher learning within the United States at the undergraduate or graduate school level in the fall of 2013.  ",
+      "website": "https://jacl.org/jacl-national-scholarship-program/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.853Z",
+      "date_updated": "2016-09-24T04:04:42.853Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 133,
+    "fields": {
+      "name": "[MOCK] 10,000 Degrees Undergraduate Scholarship",
+      "deadline": "2016-03-02",
+      "amount": 5000,
+      "description": "High school seniors, college undergraduates",
+      "website": "http://www.10000degrees.org/students/scholarships/undergraduate-scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.882Z",
+      "date_updated": "2016-09-24T04:04:42.882Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 134,
+    "fields": {
+      "name": "[MOCK] Alexander Hamilton Friends Association",
+      "deadline": "2016-03-06",
+      "amount": null,
+      "description": "0utstanding high school juniors, college bound, strong record of community service",
+      "website": "http://hamiltonscholars.org/1/the-program/how-to-apply/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.906Z",
+      "date_updated": "2016-09-24T04:04:42.906Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 135,
+    "fields": {
+      "name": "[MOCK] dEACTIVATED Athlete Milk Mustache of the Year (SAMMY)",
+      "deadline": "2015-03-12",
+      "amount": 7500,
+      "description": "Must demonstrate excellence in athletics  Must demonstrate excellence in academics. Must hold at least one leadership position. Must be involved in community service. Must drink milk.",
+      "website": "http://www.collegescholarships.com/scholarships/detail/130627",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.931Z",
+      "date_updated": "2016-09-24T04:04:42.932Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 136,
+    "fields": {
+      "name": "[MOCK] Hellenic Times Scholarship",
+      "deadline": "2016-03-18",
+      "amount": null,
+      "description": "Must be enrolled in an accredited College or University for the academic year 2013-14. Applicants may be graduate or undergraduate students. Must be of Greek descent, and between the ages of 17 and 25 as of May, 2013. Students receiving a full scholarship from any other source, or a partial scholarship exceeding 50% of their annual tuition, are ineligible.",
+      "website": "http://www.htsfund.org/guidelines.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.957Z",
+      "date_updated": "2016-09-24T04:04:42.957Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 137,
+    "fields": {
+      "name": "[MOCK] Alliance/Merck Ciencia (Science) Hispanic Scholars Program",
+      "deadline": "2013-03-15",
+      "amount": 2000,
+      "description": "Hispanic college students from all 50 states, the District of Columbia, U.S. territories and Puerto Rico pursuing a Bachelor\u00e2\u20ac\u2122s degree in a STEM field major are invited to apply for a $2,000 one-time scholarship of which 25 will be awarded in the Spring of 2013.",
+      "website": "https://www.alliancescholars.org/applications/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:42.981Z",
+      "date_updated": "2016-09-24T04:04:42.981Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 138,
+    "fields": {
+      "name": "[MOCK] ASHG DNA Day Essay Contest",
+      "deadline": "2016-03-11",
+      "amount": 1000,
+      "description": "High school students",
+      "website": "http://www.ashg.org/education/dnaday.shtml",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.006Z",
+      "date_updated": "2016-09-24T04:04:43.006Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 139,
+    "fields": {
+      "name": "[MOCK] Albert Lee Wright, Jr. Memorial Migrant Scholarship",
+      "deadline": "2015-02-05",
+      "amount": 3000,
+      "description": "Scholarships will be given to graduating high school students entering college for the first time.",
+      "website": "http://www.nasdme.org/Wright2015.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.030Z",
+      "date_updated": "2016-09-24T04:04:43.030Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 140,
+    "fields": {
+      "name": "[MOCK] Leonard M. Perryman Communications Scholarship",
+      "deadline": "2015-03-15",
+      "amount": 2500,
+      "description": "Must be United Methodist undergraduate studying religion journalism or mass communications.",
+      "website": "http://www.umcom.org/about/leonard-m-perryman-scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.055Z",
+      "date_updated": "2016-09-24T04:04:43.055Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 141,
+    "fields": {
+      "name": "[MOCK] Cruzando Fronteras/Ayudando ala Comunidad Scholarship",
+      "deadline": "2014-03-17",
+      "amount": 500,
+      "description": "High school seniors from Sacramento, California, must be undocumented, GPA 2.5 or higher",
+      "website": "http://www.cappex.com/scholarship/listings/Cruzando-Fronteras/Ayudando-a-la-Comunidad-Scholarship/-s-d-37973",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.080Z",
+      "date_updated": "2016-09-24T04:04:43.080Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 142,
+    "fields": {
+      "name": "[MOCK] Yoshiyama Award for Exemplary Service to the Community",
+      "deadline": "2013-03-17",
+      "amount": 5000,
+      "description": "Graduating high school seniors in the United States and its territories. You must demonstrate self-motivation, leadership, creativity, dedication and a commitment to pursuing community service to be eligible for this award. This award is based primarily on the impact of your community service activities, and you must be nominated by someone familiar with your service. GPA, SAT scores and school club memberships are not considered in the selection process.",
+      "website": "No updated information can be found on scholarship- may be defunct.",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.105Z",
+      "date_updated": "2016-09-24T04:04:43.105Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 143,
+    "fields": {
+      "name": "[MOCK] Migrant Health Scholarship Award",
+      "deadline": "2015-03-21",
+      "amount": 1500,
+      "description": "Applicants must interested in pursuing or continuing their career in the migrant health field and employees at a Community/Migrant Health Center. While we encourage individuals with a farmworker background to apply, it is not a requirement.",
+      "website": "http://www.ncfh.org/scholarships.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.128Z",
+      "date_updated": "2016-09-24T04:04:43.128Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 144,
+    "fields": {
+      "name": "[MOCK] Anthem Essay Contest",
+      "deadline": "2016-03-26",
+      "amount": 2000,
+      "description": "Must be in 8th, 9th, or 10th grade",
+      "website": "https://www.aynrand.org/students/essay-contests",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.152Z",
+      "date_updated": "2016-09-24T04:04:43.152Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 145,
+    "fields": {
+      "name": "[MOCK] B. Davis Scholarship",
+      "deadline": "2016-03-23",
+      "amount": 1000,
+      "description": "Must be high school seniors and juniors This Scholarship is available to all high school juniors as well as currently registered in any post secondary institution.",
+      "website": "http://www.studentawardsearch.com/scholarships.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.180Z",
+      "date_updated": "2016-09-24T04:04:43.181Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 146,
+    "fields": {
+      "name": "[MOCK] TRENZA Scholarships",
+      "deadline": "2016-03-25",
+      "amount": 500,
+      "description": "Graduating Chicana/Latina high school seniors from California, offered by undergraduate students",
+      "website": "http://trenzascholarships.webs.com/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.207Z",
+      "date_updated": "2016-09-24T04:04:43.207Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 147,
+    "fields": {
+      "name": "[MOCK] A . Patrick Charnon Memorial Scholarship",
+      "deadline": "2015-03-31",
+      "amount": 3500,
+      "description": "Applicant must be admitted or enrolled in a accredited undergraduate program in a four-year college or university in the",
+      "website": "http://www.scholarshipscollege.com/a-patrick-charnon-memorial-scholarship/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.226Z",
+      "date_updated": "2016-09-24T04:04:43.226Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 148,
+    "fields": {
+      "name": "[MOCK] The American Academy of Chefs\u00c2\u00ae The American Culinary Federation",
+      "deadline": "2016-03-31",
+      "amount": null,
+      "description": "Be an exemplary student. Have or maintain a cumulative GPA of 2.5 or higher.  Be a high school senior eligible to graduate the same year as the scholarship application date.  Be currently accepted to an accredited, postsecondary college, with a major in either culinary or pastry arts, or be an ACF registered apprentice",
+      "website": "http://www.acfchefs.org/ACF/Education/Scholarships/ACF/Education/Scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.254Z",
+      "date_updated": "2016-09-24T04:04:43.254Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 149,
+    "fields": {
+      "name": "[MOCK] Automotive Aftermarket Scholarship",
+      "deadline": "2016-03-31",
+      "amount": null,
+      "description": "Qualified applicants must be a graduating high school senior, or have graduated from high school or received a GED certificate.  There is no minimum GPA requirement for GAAS awards. Applicants must be enrolled or planning to enroll as a full time student in a 2 or 4 year college or an ASE/NATEF certified post secondary automotive, collision repair, or heavy duty program.",
+      "website": "http://www.automotivescholarships.com/index.cfm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.279Z",
+      "date_updated": "2016-09-24T04:04:43.279Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 150,
+    "fields": {
+      "name": "[MOCK] YouthPower365 Scholarships",
+      "deadline": "2017-02-28",
+      "amount": null,
+      "description": "Create profile to recieve list of scholarship opportunities",
+      "website": "http://www.youthfoundation.dollarsforscholars.org/index.php?section=chapterWebsite&action=student_parent&fwID=2257",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.303Z",
+      "date_updated": "2016-09-24T04:04:43.303Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 151,
+    "fields": {
+      "name": "[MOCK] Scholarships for Foster Youth",
+      "deadline": "2016-03-31",
+      "amount": 5000,
+      "description": "Have been in public or private foster care for the 12 consecutive months prior to their 18th birthday; OR have been adopted or placed into legal guardianship from foster care after their 16th birthday; OR they must have been orphaned for at least one year at the time of their 18th birthday. Have been accepted into or expect to be accepted into an accredited. And, be under the age of 25 on March 31, 2017 if you have not previously received scholarship funding from FC2S. Have been in foster care or orphaned while living in the United States.  U.S. citizenship is not required",
+      "website": "http://www.fc2success.org/our-programs/information-for-students/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.327Z",
+      "date_updated": "2016-09-24T04:04:43.327Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 152,
+    "fields": {
+      "name": "[MOCK] Marriott Scholars Program",
+      "deadline": "2013-03-01",
+      "amount": 1000,
+      "description": "Hispanic or African American; enrolled full-time in an accredited four-year college or university with a hospitality management program as an incoming college freshman, first year freshman or community college transfer; pursuing or planning to pursue a degree within the hospitality management, hotel management, culinary or food and beverage field; and possess a cumulative grade point average of 3.0 or better on a 4.0 scale.",
+      "website": "",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.351Z",
+      "date_updated": "2016-09-24T04:04:43.351Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 153,
+    "fields": {
+      "name": "[MOCK] Fredrikson Minority Scholarship Program",
+      "deadline": "2017-03-31",
+      "amount": 15000,
+      "description": "Must be a first year law student. The scholarship is awarded based on law school performance, professional references, work and other activities, writing samples and personal interviews.",
+      "website": "http://www.fredlaw.com/our_firm/diversity/minority_scholarship/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.376Z",
+      "date_updated": "2016-09-24T04:04:43.376Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 154,
+    "fields": {
+      "name": "[MOCK] LULAC National Scholastic Achievement Awards",
+      "deadline": "2016-03-31",
+      "amount": 2000,
+      "description": "GPA of 3.5 or better on a 4.0 scale or equivalent, and if the student is an entering freshman. 29 or higher on the ACT test, or 1350 or higher on the SAT test.",
+      "website": "http://www.lnesc.org/#!lnsf/c17bl",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.405Z",
+      "date_updated": "2016-09-24T04:04:43.405Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 155,
+    "fields": {
+      "name": "[MOCK] LULAC Honors Awards",
+      "deadline": "2016-03-31",
+      "amount": 2000,
+      "description": "GPA of 3.0 or better on a 4.0 scale or equivalent, and if the student is an entering freshman.23 or higher on the ACT test, or 1100 or higher on the SAT.",
+      "website": "http://www.lnesc.org/#!lnsf/c17bl",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.429Z",
+      "date_updated": "2016-09-24T04:04:43.429Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 156,
+    "fields": {
+      "name": "[MOCK] LULAC General Awards",
+      "deadline": "2016-03-31",
+      "amount": 1000,
+      "description": "Grades and academic performance will serve as indicators of potential. Student applications must be mailed directly to a local participating LULAC Council in your area.",
+      "website": "http://www.lnesc.org/#!lnsf/c17bl",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.453Z",
+      "date_updated": "2016-09-24T04:04:43.453Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 157,
+    "fields": {
+      "name": "[MOCK] L. Ron Hubbard\u00e2\u20ac\u2122s Future Writers Library Contest",
+      "deadline": "2016-07-01",
+      "amount": 1000,
+      "description": "Students of any age are eligible to enter this writing contest as long as they are amateur writers. Students must submit a piece with a science fiction, fantasy, or horror with fantastic elements theme. The Contest has four quarters, beginning on October 1, January 1, April 1 and July 1",
+      "website": "http://www.writersofthefuture.com/enter-writer-contest/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.476Z",
+      "date_updated": "2016-09-24T04:04:43.476Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 158,
+    "fields": {
+      "name": "[MOCK] Gloria Barron Prize for Young Heroes",
+      "deadline": "2016-04-15",
+      "amount": 5000,
+      "description": "must be between 8 to 18 years old and be nominated for this prize. Currently working on an inspiring service project or have done so within the past 12 months.\n",
+      "website": "http://barronprize.org/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.499Z",
+      "date_updated": "2016-09-24T04:04:43.499Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 159,
+    "fields": {
+      "name": "[MOCK] Davis-Putter Scholarship",
+      "deadline": "0017-01-01",
+      "amount": 10000,
+      "description": "For college student who are activists in the US",
+      "website": "http://www.davisputter.org/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.524Z",
+      "date_updated": "2016-09-24T04:04:43.524Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 160,
+    "fields": {
+      "name": "[MOCK] The American Nuclear Society Scholarship Program",
+      "deadline": "0016-11-15",
+      "amount": null,
+      "description": "Graduating high-school seniors who have enrolled, full-time, in college courses and are pursuing a degree in nuclear engineering or have the intent to pursue a degree in nuclear engineering. ",
+      "website": "http://www.ans.org/honors/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.552Z",
+      "date_updated": "2016-09-24T04:04:43.552Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 161,
+    "fields": {
+      "name": "[MOCK] Academy of Motion Picture Students Academy Awards",
+      "deadline": "2016-04-01",
+      "amount": 5000,
+      "description": "REGION ONE: Alaska, California, Hawaii, Idaho, Montana, Nevada, Oregon, Washington, Wyoming. The filmmaker must be a full-time student in a degree-granting program at an accredited** U.S. college or university.  The film must have been made in a teacher-student relationship within the curricular structure of that institution.  If the filmmaker has graduated or left such a program, the film may be submitted no later than one year from the filmmaker's date of departure.",
+      "website": "http://www.oscars.org/saa",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.575Z",
+      "date_updated": "2016-09-24T04:04:43.575Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 162,
+    "fields": {
+      "name": "[MOCK] Transportation Clubs International Scholarships",
+      "deadline": "2016-05-31",
+      "amount": 1000,
+      "description": "Graduating high school seniors and college undergraduate students accepted to or currently enrolled at accredited institutions of higher learning in degree programs in the fields of transportation logistics, supply-chain management, traffic management, transportation safety and/or related transportation industry operations and services.  ",
+      "website": "http://www.ltna.org/scholarshipapplications.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.601Z",
+      "date_updated": "2016-09-24T04:04:43.601Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 163,
+    "fields": {
+      "name": "[MOCK] Mary Quon Moy Ing Memorial Scholarship",
+      "deadline": "2016-05-01",
+      "amount": 2000,
+      "description": "Applicants must be a graduating high school senior, undergraduate, or graduate student enrolled full time with at least 12 credit units each semester for the fall of 2016 and spring of 2017. Applicants must be currently taking or planning to take journalism courses and/or pursing journalism as a career. \n",
+      "website": "http://www.aaja.org/2015-mary-quon-moy-ing/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.631Z",
+      "date_updated": "2016-09-24T04:04:43.631Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 164,
+    "fields": {
+      "name": "[MOCK] NAHJ Maria Elena Salinas Scholarship",
+      "deadline": "2016-04-15",
+      "amount": 5000,
+      "description": "Students who demonstrated a strong desire to pursue a career as a Spanish-language broadcast journalist. This scholarship is awarded to college undergraduate and graduate students. ",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.654Z",
+      "date_updated": "2016-09-24T04:04:43.654Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 165,
+    "fields": {
+      "name": "[MOCK] NAHJ Geraldo Rivera Scholarship",
+      "deadline": "2016-04-15",
+      "amount": 5000,
+      "description": "College senior or graduate student pursuing a career in English or Spanish-language TV broadcast journalism.",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.680Z",
+      "date_updated": "2016-09-24T04:04:43.680Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 166,
+    "fields": {
+      "name": "[MOCK] NAHJ Soledad O\u00e2\u20ac\u2122Brien Scholarship",
+      "deadline": "2015-03-15",
+      "amount": 5000,
+      "description": "Undergraduate or graduate students pursuing a career in TV broadcast journalism.",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.704Z",
+      "date_updated": "2016-09-24T04:04:43.705Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 167,
+    "fields": {
+      "name": "[MOCK] NAHJ Jane Velez-Mitchell Scholarship",
+      "deadline": "2015-03-15",
+      "amount": 5000,
+      "description": "Undergraduate or graduate students pursuing a career in TV broadcast journalism.",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.730Z",
+      "date_updated": "2016-09-24T04:04:43.730Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 168,
+    "fields": {
+      "name": "[MOCK] NAHJ General Scholarship",
+      "deadline": "2015-03-15",
+      "amount": 2000,
+      "description": "College-bound high school seniors, college undergraduates and graduate students pursuing careers in English or Spanish-language print, photo, broadcast or online journalism.",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.751Z",
+      "date_updated": "2016-09-24T04:04:43.751Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 169,
+    "fields": {
+      "name": "[MOCK] NAHJ Ford Motor Company Scholarships",
+      "deadline": "2016-04-15",
+      "amount": 2000,
+      "description": "Students pursuing careers in print, broadcast, online and visual journalism. College bound high school seniors, undergraduates, or graduate students. Must have 2.0 average. Each of the following criteria is weighed equally when NAHJ considers which students to select: Commitment to field of journalism, academic achievement, financial need, and awareness of community.",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.774Z",
+      "date_updated": "2016-09-24T04:04:43.774Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 170,
+    "fields": {
+      "name": "[MOCK] NAHJ PepsiCo Scholarships",
+      "deadline": "2016-04-15",
+      "amount": 2000,
+      "description": "Students pursuing careers in print, broadcast, online and visual journalism. College-bound high school seniors, college undergraduates and graduate students are eligible as long as they have a 2.0 average. Commitment to the field of journalism, academic achievement, financial need, awareness of the community.",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.799Z",
+      "date_updated": "2016-09-24T04:04:43.799Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 171,
+    "fields": {
+      "name": "[MOCK] NAHJ Ruben Salazar Scholarships",
+      "deadline": "2015-04-14",
+      "amount": 2000,
+      "description": "College-bound high school seniors, college undergraduates and graduate students pursuing careers in English or Spanish-language print, photo, broadcast or online journalism. Interest in journalism career and financial need. Application may be in English or Spanish. Commitment to field of journalism, academic achievement, financial need, and awareness of community.",
+      "website": "http://nahj.org/scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.825Z",
+      "date_updated": "2016-09-24T04:04:43.825Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 172,
+    "fields": {
+      "name": "[MOCK] Educational Advancement Foundation, Merit ",
+      "deadline": "2016-04-15",
+      "amount": 2500,
+      "description": "Be a full-time, sophomore or beyond;\nBe currently enrolled in an accredited degree-granting institution;\nHave a minimum GPA of 3.0 (\"B\" average);\nDemonstrate community service and involvement.",
+      "website": "http://www.akaeaf.org/scholarships.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.848Z",
+      "date_updated": "2016-09-24T04:04:43.848Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 173,
+    "fields": {
+      "name": "[MOCK] Educational Advancement Foundation, Financial Need",
+      "deadline": "2016-04-15",
+      "amount": null,
+      "description": "Be a full-time, sophomore or beyond;\nBe currently enrolled in an accredited degree-granting institution;\nHave a minimum GPA of 2.5 (\"C+\" average);\nDemonstrate community service and involvement.",
+      "website": "http://www.akaeaf.org/scholarships.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.873Z",
+      "date_updated": "2016-09-24T04:04:43.873Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 174,
+    "fields": {
+      "name": "[MOCK] Gloria and Joseph Mattera National Scholarship Fund for Migrant Children",
+      "deadline": "2016-04-15",
+      "amount": 250,
+      "description": "High school senior or college students are able to apple, migrant youth with a background in migrant formwork, agricultural, and have financial need. To assist financially those migrant youth who have the potential and the desire to further their education to achieve their personal and career goals. Eligible applicants must be entering or enrolled in college or other types of post-secondary programs, high school dropouts or potential dropouts.",
+      "website": "http://www.migrant.net/migrant/scholarships/mattera.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.898Z",
+      "date_updated": "2016-09-24T04:04:43.898Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 175,
+    "fields": {
+      "name": "[MOCK] Troy Women\u00e2\u20ac\u2122s Association  Scholarship",
+      "deadline": "2016-04-30",
+      "amount": null,
+      "description": "The Troy Women\u00e2\u20ac\u2122s Association (TWA) awards several college scholarships to females graduating from high school, returning to school, or continuing their college education.  Applicants must demonstrate community service and have a financial need. One of the scholarships, the Donna Smith Scholarship, is awarded to an applicant who has demonstrated community service and is pursuing a degree in business or accounting.",
+      "website": "http://www.troywomensassociation.org/scholarship.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.920Z",
+      "date_updated": "2016-09-24T04:04:43.920Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 176,
+    "fields": {
+      "name": "[MOCK] Holocaust Remembrance Project Essay",
+      "deadline": "2013-04-19",
+      "amount": 5000,
+      "description": "This contest is open to all students age 19 and under. Are currently enrolled as a high school student in grades 9-12 (including home schooled students), or who are high school seniors who may graduate high school any time during the application year, or who are enrolled in a high school equivalency program. Are residents of the United States, Commonwealth of Puerto Rico, U.S. Virgin Islands, or Guam.",
+      "website": "http://holocaust.hklaw.com/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.945Z",
+      "date_updated": "2016-09-24T04:04:43.945Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 177,
+    "fields": {
+      "name": "[MOCK] Fountainhead Essay Contest",
+      "deadline": "2016-04-29",
+      "amount": 10000,
+      "description": "High school juniors and seniors",
+      "website": "https://www.aynrand.org/students/essay-contests",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.970Z",
+      "date_updated": "2016-09-24T04:04:43.970Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 178,
+    "fields": {
+      "name": "[MOCK] The Hispanic Engineers National Achieve Award",
+      "deadline": "2013-04-30",
+      "amount": null,
+      "description": "High school seniors and college students who are in/interested in STEM related majors, must be of Hispanic origin and/or must significantly participate in and promote organizations and activities in the Hispanic community.",
+      "website": "",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:43.996Z",
+      "date_updated": "2016-09-24T04:04:43.996Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 179,
+    "fields": {
+      "name": "[MOCK] Bill Dickey Scholarship",
+      "deadline": "2014-05-02",
+      "amount": 3500,
+      "description": "High school seniors already in our database as well as undergraduate students that previously received a scholarship as a freshman are eligible to apply. Awards are based on academic achievement, entrance exam scores, financial need, references, evidence of community service, and golfing ability.",
+      "website": "http://www.nmjgsa.org/scholarships.php",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.020Z",
+      "date_updated": "2016-09-24T04:04:44.020Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 180,
+    "fields": {
+      "name": "[MOCK] Ferdinand Torres Scholarship",
+      "deadline": "2014-04-30",
+      "amount": 3500,
+      "description": "This scholarship is for students who are legally blind. To qualify for this scholarship, applicants must be full-time undergraduate or graduate students. Strong preference will be given to new immigrants to the US. Applicants must reside in the United States, but need not be citizens of the United States. ",
+      "website": "https://www.afb.org/info/afb-2014-scholarship-application/5",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.044Z",
+      "date_updated": "2016-09-24T04:04:44.044Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 181,
+    "fields": {
+      "name": "[MOCK] Los Hermanos de Stanford Scholarship",
+      "deadline": "2016-05-08",
+      "amount": 1000,
+      "description": "Latino/a students graduating from high school with plans to attend any 2-year or 4-year institution of higher learning (students planning to attend Community College are very welcome to apply).",
+      "website": "http://www.stanford.edu/group/hermanos/cgi-bin/HermanosWordpress2012/wordpress/?page_id=475",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.069Z",
+      "date_updated": "2016-09-24T04:04:44.069Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 182,
+    "fields": {
+      "name": "[MOCK] The American Academy of Chefs\u00c2\u00ae The American Culinary Federation- College",
+      "deadline": "2016-05-01",
+      "amount": null,
+      "description": "Have and maintain a cumulative GPA of 2.50 or higher. Be currently enrolled in an accredited, postsecondary college, with a major in either culinary or pastry arts, or be an ACFEF registered apprentice. Have completed a grading or marking period. Have a career goal of becoming a chef or pastry chef.",
+      "website": "http://www.acfchefs.org/ACF/Education/Scholarships/ACF/Education/Scholarships/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.092Z",
+      "date_updated": "2016-09-24T04:04:44.092Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 183,
+    "fields": {
+      "name": "[MOCK] The Byron Hanke Fellowship",
+      "deadline": "2017-05-01",
+      "amount": 5000,
+      "description": "Hanke Fellowship applicants must be enrolled at the time of application, and through the period of research, in an accredited master's, doctoral, or law program in the United States of America or Canada. Students of all disciplines are welcome to apply for the Hanke Fellowship, provided their studies relate to community associations/ common interest communities generally and to the topic of the candidate's proposed community associations research project.",
+      "website": "http://www.cairf.org/scholarships/hanke.aspx",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.117Z",
+      "date_updated": "2016-09-24T04:04:44.117Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 184,
+    "fields": {
+      "name": "[MOCK] Society of Hispanic Professional Engineers Scholarship",
+      "deadline": "2016-05-01",
+      "amount": 1500,
+      "description": "Latino/a high school graduating seniors, undergraduate students, and graduate students who demonstrate both significant motivation and aptitude for a career in STEM.",
+      "website": "http://www.shpe.org/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.145Z",
+      "date_updated": "2016-09-24T04:04:44.145Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 185,
+    "fields": {
+      "name": "[MOCK] AHETEMS General Scholarship",
+      "deadline": "2016-05-01",
+      "amount": 3000,
+      "description": "Be a high school or undergraduate student, Hispanic decent, Be accepted into or attending an accredited 2-year or 4-year college or university in the US. Be enrolled full-time. Minimum GPA: 3.0 on a 4.0 for high school seniors and undergraduates; 3.00 for graduate students. Must be a SHPE member to apply. Major in STEM.",
+      "website": "",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.170Z",
+      "date_updated": "2016-09-24T04:04:44.170Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 186,
+    "fields": {
+      "name": "[MOCK] General Scholarship",
+      "deadline": "2016-05-01",
+      "amount": 5000,
+      "description": "Applicant must be of Hispanic-descent accepted into or attending an accredited 2-year or 4-year college or university in the U.S. or Puerto Rico, and be enrolled full-time during the academic year. High school graduating seniors must be graduating from an accredited U.S. high school with a diploma. Applicant must possess a minimum GPA: 3.00 on a 4.0 for high school seniors and undergraduates; 3.25 on a 4.0 scale for graduate students, and must major in STEM related field, and be pursuing your first bachelors, masters or doctoral degree. Applicant must be a SHPE member.",
+      "website": "http://hsf.net/en/scholarships/programs/general-college-scholarships",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.194Z",
+      "date_updated": "2016-09-24T04:04:44.194Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 187,
+    "fields": {
+      "name": "[MOCK] National Association Hispanic Nurses",
+      "deadline": "2016-05-03",
+      "amount": null,
+      "description": "Must be Hispanic and  must be a NAHN member for at least 6 months previous to the submission deadline.",
+      "website": "http://www.nahnnet.org/nahnscholarships.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.219Z",
+      "date_updated": "2016-09-24T04:04:44.219Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 188,
+    "fields": {
+      "name": "[MOCK] ASHRAE High School Senior Scholarship",
+      "deadline": "2016-05-01",
+      "amount": 3000,
+      "description": "Applicants must be high school seniors who have been accepted into a pre-engineering, engineering, or engineering technology program at a post-secondary educational institution that meets the followling criteria: The institution hosts a recognized ASHRAE Student Branch. The program is accredited by the Accreditation Board for Engineering and Technology (ABET) or the Partnership for Air-Conditioning, Heating, Refrigeration Accreditation (PAHRA) in the USA. The program is accredited by an equivalent agency outside the USA that is part of The Washington or Sydney Accord or has a signed Memorandum of Understanding with ABET. Must have a cumulative GPA of at least 3.0 on a 4.0 scale, and/or have a class standing no less than the top 30%. ",
+      "website": "https://www.ashrae.org/membership--conferences/student-zone/scholarships-and-grants/high-school-senior-scholarships",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.243Z",
+      "date_updated": "2016-09-24T04:04:44.243Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 189,
+    "fields": {
+      "name": "[MOCK] Council for International Cooperation (CIC) Anna Chennault Scholarship",
+      "deadline": "2016-05-03",
+      "amount": 5000,
+      "description": "Must be a high school senior or currently college student. Candidates will be judged on the basis of academic achievement, demonstrated journalistic ability, commitment to the field of journalism and/or sensitivity to Asian American and Pacific Islander Issues.",
+      "website": "http://www.aaja.org/2016-anna-chennault-scholarship/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.267Z",
+      "date_updated": "2016-09-24T04:04:44.267Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 190,
+    "fields": {
+      "name": "[MOCK] James Beard Foundation",
+      "deadline": "2016-04-01",
+      "amount": null,
+      "description": "High school seniors and high school graduates, interested in culinary",
+      "website": "http://www.jamesbeard.org/education/scholarships-and-grants",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.295Z",
+      "date_updated": "2016-09-24T04:04:44.295Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 191,
+    "fields": {
+      "name": "[MOCK] PRSA Diversity Multicultural Scholarship-PRSSA",
+      "deadline": "2016-05-22",
+      "amount": 1500,
+      "description": "You must be of African-American/Black, Hispanic/Latino, Asian, Native American, Alaskan Native or Pacific Islander ancestry. Must be registered as a full-time undergraduate student at an accredited four-year college or university. A major or minor in public relations is also preferred. A student who attends a school that does not offer a public relations degree or program must be enrolled in a communications degree program (e.g., journalism or mass communications). You must have attained, by Fall 2016, at least junior status and have at most one full term remaining. You also must have earned and maintained a minimum 3.0 grade point average on a 4.0 point scale in all courses.",
+      "website": "http://www.prssa.org/scholarships_competitions/individual/diversity/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.319Z",
+      "date_updated": "2016-09-24T04:04:44.319Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 192,
+    "fields": {
+      "name": "[MOCK] Center for Student Opportunity (CSO) Scholarship",
+      "deadline": "2016-05-24",
+      "amount": 2000,
+      "description": "Graduating high school seniors. Attending an eligible four-year college or university partnered with CSO in the fall of 2013. First-generation and/or limited financial resources - students who seek financial aid and scholarships for college, and/or underrepresented/minority groups,st udents who identify as African-American/Black, American Indian/Alaska native, Hispanic/Latino, and Asian/Pacific Islander",
+      "website": "http://www.zinch.com/Scholarships/CSO-Opportunity-Scholarship",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.343Z",
+      "date_updated": "2016-09-24T04:04:44.343Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 193,
+    "fields": {
+      "name": "[MOCK] John D. Graham Scholarship-PRSSA",
+      "deadline": "2016-05-27",
+      "amount": 3000,
+      "description": "Academic achievement in public relations and overall studies. Demonstrated leadership. Practical experience in internships, other work/service. Commitment to public relations, particularly as expressed in the candidate\u00e2\u20ac\u2122s statements in the application form.Writing skills demonstrated throughout the application form.",
+      "website": "http://www.prssa.org/scholarships_competitions/individual/graham/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.368Z",
+      "date_updated": "2016-09-24T04:04:44.368Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 194,
+    "fields": {
+      "name": "[MOCK] Marcia Silverman Minority Student Award-PRSSA",
+      "deadline": "2016-05-27",
+      "amount": 5000,
+      "description": "Be enrolled in a journalism program, public relations studies or courses preparing for a career in public relations. Be entering your senior year of undergraduate studies this fall. Have a minimum 3.0 GPA. Be of African-American/Black, Hispanic/Latino, Asian, Native American, Alaskan Native or Pacific Islander ancestry.",
+      "website": "http://www.prssa.org/scholarships_competitions/individual/silverman/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.392Z",
+      "date_updated": "2016-09-24T04:04:44.392Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 195,
+    "fields": {
+      "name": "[MOCK] IFMA Foundation Scholarship",
+      "deadline": "2016-05-27",
+      "amount": null,
+      "description": "Must be a full time undergraduate student as defined by your university at the time of submitting the application and at the time of receiving the scholarship.  Must be enrolled in a facility management (or related field) degree program in an accredited four-year Bachelor (undergraduate) program. Undergraduate students must have completed two years of university studies to be eligible for consideration. May not be employed full time.  Must have a minimum Grade Point Average (GPA) of 3.2 or be able to document that your academic study achievement is at an 85% of highest grading evaluation maximum scale.  This differs from country to country. Applicants awarded a scholarship must attend IFMA\u00e2\u20ac\u2122s World Workplace Conference (WWP) and Exhibition as well as attend educational sessions associated with WWP (costs included in scholarship)",
+      "website": "http://foundation.ifma.org/students/fm-student-scholarship-program/scholarship-program-information---for-students",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.415Z",
+      "date_updated": "2016-09-24T04:04:44.416Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 196,
+    "fields": {
+      "name": "[MOCK] U.S. Bank Internet Scholarship Program",
+      "deadline": "2016-05-29",
+      "amount": 1000,
+      "description": "Has a minimum GPA of 3.0 on a 4.0 scale",
+      "website": "https://www.usbank.com/community/financial-education/scholarship.html",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.444Z",
+      "date_updated": "2016-09-24T04:04:44.444Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 197,
+    "fields": {
+      "name": "[MOCK] National Council of La Raza \u00e2\u20ac\u201c Best Buy Emerging Latino Leaders Scholarship Program",
+      "deadline": "2016-06-01",
+      "amount": 15000,
+      "description": "High school seniors, must be Hispanic, GPA 2.0 or higher",
+      "website": "http://www.nclr.org/index.php/issues_and_programs/education/ece/policy/ecepolicy/scholarships_opportunities_and_resources/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.469Z",
+      "date_updated": "2016-09-24T04:04:44.469Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 198,
+    "fields": {
+      "name": "[MOCK] Kor Memorial Scholarship",
+      "deadline": "2016-06-01",
+      "amount": 500,
+      "description": "College students in a field of language study",
+      "website": "http://www.cappex.com/scholarship/listings/Kor-Memorial-Scholarship/-s-d-1762",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.493Z",
+      "date_updated": "2016-09-24T04:04:44.493Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 199,
+    "fields": {
+      "name": "[MOCK] Berrien Fragos Thorn Arts Scholarship for Migrant Farmworkers",
+      "deadline": "2016-06-01",
+      "amount": 2500,
+      "description": "Must be at least 16 years old, history of movement to obtain work in agriculture is REQUIRED. Have demonstrated a certain level of academic achievement and potential for college success.",
+      "website": "http://www.migrant.net/migrant/scholarships/thorn.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.519Z",
+      "date_updated": "2016-09-24T04:04:44.519Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 200,
+    "fields": {
+      "name": "[MOCK] National Sculpture Society Scholarship",
+      "deadline": "2016-10-03",
+      "amount": 2000,
+      "description": "Students of sculpture. Please note that work that is inspired by nature - or figurative or realist sculpture - is preferred. It is suggested that students take at least one college level art class before applying. The educational institution the student attends must be an accredited U.S. institution.",
+      "website": "http://www.nationalsculpture.org/nssN/pdfs/Scholarships.pdf",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.544Z",
+      "date_updated": "2016-09-24T04:04:44.544Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 201,
+    "fields": {
+      "name": "[MOCK] Lawrence G. Foster Award for Excellence in Public Relations- PRSSA",
+      "deadline": "2016-06-03",
+      "amount": 1500,
+      "description": "All PRSSA Members are welcomed to apply",
+      "website": "http://www.prssa.org/scholarships_competitions/individual/foster/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.569Z",
+      "date_updated": "2016-09-24T04:04:44.569Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 202,
+    "fields": {
+      "name": "[MOCK] Stephen D. Pisinski Memorial Scholarship-PRSSA",
+      "deadline": "2016-06-01",
+      "amount": 1500,
+      "description": "Be a journalism, communications or public relations major. Be in your junior or senior year of college. Have at least a 3.3 overall grade point average on a 4.0 scale. Be a PRSSA member.",
+      "website": "http://www.prssa.org/scholarships_competitions/individual/pisinski/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.593Z",
+      "date_updated": "2016-09-24T04:04:44.593Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 203,
+    "fields": {
+      "name": "[MOCK] Betsy Plank/PRSSA Scholarships",
+      "deadline": "2016-05-27",
+      "amount": 5000,
+      "description": "You must be a PRSSA member in your junior or senior year of college, preparing for a career in public relations to apply for this award. Academic achievement in public relations and overall studies. Demonstrated leadership. Practical experience, e.g. internships, other work/service, student firm work Commitment to public relations, particularly as expressed in the candidate's statement.",
+      "website": "http://www.prssa.org/scholarships_competitions/individual/plank/",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.617Z",
+      "date_updated": "2016-09-24T04:04:44.617Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 204,
+    "fields": {
+      "name": "[MOCK] Abbott and Fenner Scholarship",
+      "deadline": "2017-06-12",
+      "amount": 1000,
+      "description": "Available to all high school juniors and seniors as well as all students currently registered in any accredited post secondary institution.\n",
+      "website": "http://www.abbottandfenner.com/scholarships.htm",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.642Z",
+      "date_updated": "2016-09-24T04:04:44.642Z"
+    }
+  },
+  {
+    "model": "scholarships.scholarship",
+    "pk": 205,
+    "fields": {
+      "name": "[MOCK] Collegiate Inventors Competition",
+      "deadline": "2016-06-09",
+      "amount": null,
+      "description": "The entry must be the original idea and work product of a student or team of students with his or her university advisor and must not have been (1) made available to the public as a commercial product or process, (2) described in extensive detail in a publication more than one year prior to the date of submission, or (3) issued a patent more than one year prior to the date of submission. On rare occasions exceptions may be made to allow the submission of significant recent improvements to matter patented or published more than one year prior to submission of the application. The entry submitted must be written in English",
+      "website": "https://collegiateinventors2016.skild.com/skild2/collegiateinventors2016/registerLeader.action",
+      "count": null,
+      "archived": false,
+      "verified": false,
+      "date_created": "2016-09-24T04:04:44.666Z",
+      "date_updated": "2016-09-24T04:04:44.666Z"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add scholarship",
+      "content_type": 7,
+      "codename": "add_scholarship"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change scholarship",
+      "content_type": 7,
+      "codename": "change_scholarship"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete scholarship",
+      "content_type": 7,
+      "codename": "delete_scholarship"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$5ZZCRUwUnz5M$47mDYbjdtkhiJq4YUEv61ztn9gJWjeHsGJGNeZfN+/w=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@undocuscholar.org",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2016-09-24T04:13:05.704Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

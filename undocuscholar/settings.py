@@ -82,16 +82,23 @@ WSGI_APPLICATION = 'undocuscholar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-if 'DATABASE_URL' not in os.environ:
-    print('runserver failed due to the environment variable "DATABASE_URL" not exported')
-else:
+if 'DATABASE_URL' in os.environ:
     print(os.environ['DATABASE_URL'])
-    print(len(os.environ['DATABASE_URL']))
-
-DATABASES = {
-    # Expects a DATABASE_URL environment variable. Ask Josue for details
-    'default': dj_database_url.config()
-}
+    DATABASES = {
+        'default': dj_database_url.config()
+    }
+elif os.getenv('ENV', 'local') in ('prod', 'dev'):
+    print('ERROR: ENV exported but DATABASE_URL not exported')
+    exit(1)
+else:
+    # Assume local development, use SQLite.
+    first_time_setup = os.path.exists('sqlite.db')
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -134,9 +141,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-
-
-# Extra places for collectstatic to find static files.
-# STATICFILES_DIRS = (
-#     os.path.join(PROJECT_ROOT, 'static'),
-# )
