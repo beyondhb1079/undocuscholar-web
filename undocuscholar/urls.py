@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 
+from scholarships.views import index
+
 urlpatterns = [
     url(r'^admin/password_reset/$', auth_views.password_reset, name='admin_password_reset'),
     url(r'^admin/password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
@@ -27,8 +29,9 @@ urlpatterns = [
     url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'), 
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('api.urls')),
-    url(r'^', include('scholarships.urls')),
-    url(r'^zsignup/', include('signup.urls')),
+    url(r'^scholarships/', include('scholarships.urls')),
+    url(r'^$', index),
+    url(r'^signup/', include('signup.urls')),
 ]
 
 
