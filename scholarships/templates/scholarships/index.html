@@ -1,4 +1,4 @@
-<!--{% load static %}-->
+{% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,24 +13,24 @@
 <!--    <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
-    <link href="../../static/scholarships/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'scholarships/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
     <nav class="black lighten-2" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">UndocuScholar</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="{% url 'home' %}" class="brand-logo">UndocuScholar</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="/scholarships/">Discover</a></li>
+                <li><a href="{% url 'scholarships:index' %}">Discover</a></li>
             </ul>
 
 
             <ul id="nav-mobile" class="side-nav">
                 <li>
                     <div class="userView">
-                        <img class="background" src="../../static/scholarships/images/red-background-wallpaper-high-quality-6431-wallpaper-cool.jpg">
-                        <a href="#!user"><img class="circle" src="../../static/scholarships/images/test"></a>
+                        <img class="background" src="{% static 'scholarships/images/red-background-wallpaper-high-quality-6431-wallpaper-cool.jpg' %}">
+                        <a href="#!user"><img class="circle" src="{% static 'scholarships/images/test' %}"></a>
                         <a href="#!name"><span class="white-text name">User's Name</span></a>
                         <a href="#!email"><span class="white-text email">dev@skagit.edu</span></a>
                     </div>
@@ -49,7 +49,7 @@
     <!-- end of nav -->
 
     <div class="userView">
-        <img class="background responsive-img" src="{% static '../../static/scholarships/images/maxresdefault.jpg' %}"/>
+        <img class="background responsive-img" src="{% static 'scholarships/images/maxresdefault.jpg' %}"/>
         <div class="container">
             <br>
             <br>
@@ -125,7 +125,7 @@
 <!--    <script src="materialize/js/materialize.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
-    <script src="../../static/scholarships/js/init.js"></script>
+    <script src="{% static 'scholarships/js/init.js' %}"></script>
 
 </body>
 
