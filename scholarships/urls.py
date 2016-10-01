@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^$', views.collection, name='collection'),
     # ex: /scholarships/1
     url(r'^(?P<scholarship_id>[0-9+])/$', views.detail, name='detail'),
+    url(r'^sync/$', views.sync, name='sync'),
 ]

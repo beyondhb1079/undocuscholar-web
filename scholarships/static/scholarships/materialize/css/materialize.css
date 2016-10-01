@@ -6475,9 +6475,9 @@ textarea {
 ***************/
 /* Remove default Radio Buttons */
 [type="radio"]:not(:checked), [type="radio"]:checked {
-  position: ;
-  left: -9999px;
-  visibility: ; }
+/*  position: absolute;*/
+/*  left: -9999px;*/
+/*  visibility: hidden; }*/
 
 [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
   position: relative;
@@ -6599,9 +6599,9 @@ form p:last-child {
 
 /* Remove default checkbox */
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-  position: ;
+  position: absolute;
   left: -9999px;
-  visibility: ; }
+  visibility: hidden; }
 
 [type="checkbox"] {
   /* checkbox aspect */ }
@@ -6848,7 +6848,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     font-size: 0.8rem; }
 
 select {
-  display: ; }
+  display: none; }
 
 select.browser-default {
   display: block; }
