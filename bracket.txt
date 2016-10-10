@@ -1,6 +1,6 @@
 This is a test sync file from brackets. (please nullify.)
 
-#export DATABASE_URL=postgres://gyxisgldeoismt:3VvzMF232xVLJR9eyJzhiZEe0y@ec2-54-243-202-110.compute-1.amazonaws.com:5432/degpvd9niipmud python manage.py runserver
+export DATABASE_URL=postgres://gyxisgldeoismt:3VvzMF232xVLJR9eyJzhiZEe0y@ec2-54-243-202-110.compute-1.amazonaws.com:5432/degpvd9niipmud python manage.py runserver
 
 initiate server:
 export DATABASE_URL=postgres://gyxisgldeoismt:3VvzMF232xVLJR9eyJzhiZEe0y@ec2-54-243-202-110.compute-1.amazonaws.com:5432/degpvd9niipmud
