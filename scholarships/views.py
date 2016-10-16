@@ -35,7 +35,7 @@ def collection(request):
         scholarships = paginator.page(paginator.num_pages)
     return render(request, 'scholarships/collection.html', {'scholarships': scholarships})
 
-def sync(reques):
+def sync(request):
     scholarship_list = Scholarship.objects.all()
     paginator = Paginator(scholarship_list, 25)  # Show 25 contacts per page
 
@@ -49,3 +49,6 @@ def sync(reques):
         # If page is out of range (e.g. 9999), deliver last page of results.
         scholarships = paginator.page(paginator.num_pages)
     return render(request, 'scholarships/sync.html', {'scholarships': scholarships})
+
+def detail(scholarship_id):
+    return 'TODO: Page info for scholarship with ID: %s' % scholarship_id

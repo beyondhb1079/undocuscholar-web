@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import os
 import sys
+from subprocess import call
+from shutil import which
 
 if __name__ == "__main__":
     first_time_sql_setup = 'DATABASE_URL' not in os.environ and 'ENV' not in os.environ and not os.path.exists('db.sqlite3')
@@ -12,4 +14,10 @@ if __name__ == "__main__":
     
     if first_time_sql_setup:
         print("First Time SQLite setup: TRUE")
-        print("Please follow the instructions in sqlite.md or click this link: https://github.com/beyondhb1079/www/blob/master/sqlite.md")
+        with open("sqlite.md") as f:
+            for l in f:
+                print(l)
+
+    # Hackish, but will do for now.
+    call([which("npm"), "install", "--prefix", "static/", "static/"])
+
