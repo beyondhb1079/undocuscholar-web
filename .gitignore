@@ -1,3 +1,4 @@
 # Ignore Python compiled binaries
 *.pyc
-.idea
+.idea/
+virtualenv/

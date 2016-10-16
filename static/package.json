@@ -1,0 +1,10 @@
+{
+  "name": "undocuscholar-web",
+  "version": "1.0.0",
+  "dependencies": {
+    "materialize-css": "0.97.2"
+    "chart.js": "2.1.2",
+    "perfect-scrollbar": "0.5.8",
+    "prismjs": "^1.5.1"
+  }
+}
