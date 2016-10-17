@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 
-from scholarships.views import index
+from scholarships.views import index, sync
 
 urlpatterns = [
     url(r'^admin/password_reset/$', auth_views.password_reset, name='admin_password_reset'),
@@ -31,6 +31,7 @@ urlpatterns = [
     url(r'^api/', include('api.urls')),
     url(r'^scholarships/', include('scholarships.urls')),
     url(r'^$', index),
+    url(r'^sync/$', sync),
     url(r'^signup/', include('signup.urls')),
 ]
 

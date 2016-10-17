@@ -10,14 +10,15 @@ if __name__ == "__main__":
 
     from django.core.management import execute_from_command_line
 
+    # Hackish, but will do for now.
+    call([which("npm"), "install", "--prefix", "static/", "static/"])
+
     execute_from_command_line(sys.argv)
-    
+
     if first_time_sql_setup:
         print("First Time SQLite setup: TRUE")
         with open("sqlite.md") as f:
             for l in f:
                 print(l)
 
-    # Hackish, but will do for now.
-    call([which("npm"), "install", "--prefix", "static/", "static/"])
 

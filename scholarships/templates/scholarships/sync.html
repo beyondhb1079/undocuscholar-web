@@ -12,9 +12,9 @@
         <link href="../../static/scholarships/css/abc.css" type="text/css" rel="stylesheet" media="screen,projection">
         <!-- CSS for full screen (Layout-2)-->
         <link href="../../static/scholarships/css/style-fullscreen.css" type="text/css" rel="stylesheet" media="screen,projection">
-        <link href="../../static/scholarships/css/css_prism.css" type="text/css" rel="stylesheet" media="screen,projection">
-        <link href="../../static/scholarships/css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-        <link href="../../static/scholarships/css/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+        <link href="{% static 'node_modules/prismjs/themes/prism.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+        <link href="{% static 'node_modules/perfect-scrollbar/min/perfect-scrollbar.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
+        <link href="{% static 'node_modules/chartist/dist/chartist.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection">
         <link href="../../static/scholarships/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -47,11 +47,11 @@
                       <li><h1 class="logo-wrapper"><a href="#" class="brand-logo darken-1"><img src="#" alt="beyone1079"></a> <span class="logo-text">beyone1070</span></h1></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="../../templates/scholarships/index.html" class="waves-effect waves-block waves-light">Home</a>
+                        <li><a href="/" class="waves-effect waves-block waves-light">Home</a>
                         </li>
-                        <li><a href="../../templates/scholarships/sync.html" class="waves-effect waves-block waves-light">Blog</a>
+                        <li><a href="/sync/" class="waves-effect waves-block waves-light">Blog</a>
                         </li>
-                        <li><a href="../../templates/scholarships/collection.html" class="waves-effect waves-block waves-light">Discover</a>
+                        <li><a href="/scholarships/" class="waves-effect waves-block waves-light">Discover</a>
                         </li>
                     </ul>
                 </div>
@@ -125,11 +125,11 @@
     <!--materialize js-->
     <script type="text/javascript" src="{% static 'node_modules/materialize-css/dist/css/materialize.min.css' %}"></script>
     <!--prism-->
-    <script type="text/javascript" src="../../static/scholarships/js/prism.js"></script>
+    <script type="text/javascript" src="{% static 'node_modules/prismjs/prism.js' %}"></script>
     <!--scrollbar-->
-    <script type="text/javascript" src="../../static/scholarships/js/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="{% static 'node_modules/perfect-scrollbar/min/perfect-scrollbar.min.js' %}"></script>
     <!-- chartist -->
-    <script type="text/javascript" src="../../static/scholarships/js/chartist.min.js"></script>
+    <script type="text/javascript" src="{% static 'node_modules/chartist/dist/chartist.min.js' %}"></script>
     <!-- global Js -->
     <script type="text/javascript" src="../../static/scholarships/js/init.js"></script>
     <!--Cutom JS -->

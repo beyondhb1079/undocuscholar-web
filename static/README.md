@@ -1,7 +1,9 @@
 # Static Files Directory
 
-Use this directory to store global static files that aren't app specific.
-Additionally, any third party library dependencies should be added in the
-`packages.json` file rather than downloaded and git added. They'll automatically
-be downloaded upon running the app and located in the `node_modules` folder. 
-THOU SHALT NOT COMMIT A THIRD PARTY LIBRARY.
+## Purpose
+This directory is meant to store any global static files as well as any third
+party libraries that can't be installed via `npm`. Libraries that can be
+installed via `npm` should be added in `package.json` as those will be
+automatically downloaded for local development and in the production environment
+as well in the node_modules/ directory. THOU SHALT NOT COMMIT A THIRD PARTY 
+LIBRARY THAT NPM CAN INSTALL.
