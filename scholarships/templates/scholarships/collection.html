@@ -1,35 +1,47 @@
 {% extends 'scholarships/_base.html' %}
 {% load static %}
+{% load custom %}
 {% block content %}
     {% for scholarship in scholarships %}
-        <ul class="collection">
-            <li class="collection-item avatar">
-                <img src="{% static 'scholarships/images/test' %}" alt="" class="circle">
-                <a href="{{ scholarship.url }}">
-                    <span class="title"> {{ scholarship.name }} </span>
-                </a>
-                <p>${{ scholarship.amount }} <br>
-                    sholarship description if any.. {{ scholarship.description }}</p>
-                <p class="secondary-content">Due on: {{ scholarship.deadline }}</p>
-{#                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>#}
-            </li>
-
-        </ul>
+        <div style="margin-left: 10%; margin-right:10%">
+            <div class="card horizontal collection-item">
+                <div class="card-image">
+                    <img src="{% static 'scholarships/images/test' %}" alt="" class="circle">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <span class="title card-title"><b>${{ scholarship.amount }}</b> - {{ scholarship.name }}</span>
+                        <p>Due on: {{ scholarship.deadline }}</p>
+                        <p>{{ scholarship.description }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{{ scholarship.website }}">View Scholarship</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     {% endfor %}
 
-    <div class="center pagination">
-        <span class="step-links">
-            {% if scholarships.has_previous %}
-                <a href="?page={{ scholarships.previous_page_number }}">previous</a>
-            {% endif %}
+    <ul class="center pagination">
+        {% if scholarships.has_previous %}
+            <li class="waves-effect"><a href="?page={{ scholarships.previous_page_number }}"><i class="material-icons">chevron_left</i></a></li>
+        {% else %}
+            <li class="disabled"><i class="material-icons">chevron_left</i></li>
+        {% endif %}
 
-            <span class="current">
-                Page {{ scholarships.number }} of {{ scholarships.paginator.num_pages }}.
-            </span>
-
-            {% if scholarships.has_next %}
-                <a href="?page={{ scholarships.next_page_number }}">next</a>
+        {% for n in scholarships.paginator.num_pages|iterations %}
+            {% if scholarships.number == n %}
+                <li class="active"><a href="?page={{ n }}">{{ n }}</a></li>
+            {% else %}
+                <li class="waves-effect"><a href="?page={{ n }}">{{ n }}</a></li>
             {% endif %}
-        </span>
-    </div>
-{%  endblock %}
+        {% endfor %}
+
+
+        {% if scholarships.has_next %}
+            <li class="waves-effect"><a href="?page={{ scholarships.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
+        {% else %}
+            <li class="disabled"><i class="material-icons">chevron_right</i></li>
+        {% endif %}
+      </ul>
+{% endblock %}
