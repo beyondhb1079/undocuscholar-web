@@ -25,11 +25,11 @@ def setup():
         execute_from_command_line([sys.argv[0], "loaddata", "undocuscholar/fixtures/initial_data.json"])
 
     # Automatically downloads JS/CSS dependencies. It's hackish, but will do for now.
-    if last_modified_time('static/package.json') > last_modified_time('static/node_modules'):
+    if last_modified_time('package.json') > last_modified_time('node_modules'):
         # static/node_modules is nonexistent or out of date. Automatically
-        print('Changes in static/package.json detected. Downloading node packages to static/node_modules...')
+        print('Changes in static/package.json detected. Downloading node packages to node_modules...')
         assert which("npm"), "npm needs to be installed: https://nodejs.org/en/download/"
-        call([which("npm"), "install", "--prefix", "static/", "static/"])
+        call([which("npm"), "install"])
 
 if __name__ == "__main__":
     setup()

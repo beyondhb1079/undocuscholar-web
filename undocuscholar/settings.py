@@ -142,19 +142,10 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "node_modules"),
 ]
-
-# import npm.finders
-#
-# NPM_EXECUTABLE_PATH = which('npm')
-# print(NPM_EXECUTABLE_PATH)
-# NPM_ROOT_PATH = os.path.join(BASE_DIR, "static")
-# NPM_STATIC_FILES_PREFIX = os.path.join(BASE_DIR, "static")
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'django.contrib.staticfiles.finders.FileSystemFinder',
-    # 'npm.finders.NpmFinder',
 ]
-
-# npm.finders.npm_install()
