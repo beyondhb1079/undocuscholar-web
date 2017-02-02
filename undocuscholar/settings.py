@@ -14,6 +14,7 @@ import os
 import dj_database_url
 from django.conf.urls import url, include
 from django.contrib import admin
+from shutil import which
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -141,3 +142,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+# import npm.finders
+#
+# NPM_EXECUTABLE_PATH = which('npm')
+# print(NPM_EXECUTABLE_PATH)
+# NPM_ROOT_PATH = os.path.join(BASE_DIR, "static")
+# NPM_STATIC_FILES_PREFIX = os.path.join(BASE_DIR, "static")
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    # 'npm.finders.NpmFinder',
+]
+
+# npm.finders.npm_install()
