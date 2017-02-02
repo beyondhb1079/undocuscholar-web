@@ -50,5 +50,5 @@ def sync(request):
         scholarships = paginator.page(paginator.num_pages)
     return render(request, 'scholarships/sync.html', {'scholarships': scholarships})
 
-def detail(scholarship_id):
-    return 'TODO: Page info for scholarship with ID: %s' % scholarship_id
+def detail(request, scholarship_id):
+    return HttpResponse('TODO: Page info for scholarship with ID: %s' % scholarship_id)

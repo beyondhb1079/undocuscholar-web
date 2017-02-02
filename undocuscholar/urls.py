@@ -30,8 +30,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('api.urls')),
     url(r'^scholarships/', include('scholarships.urls')),
-    url(r'^$', index),
-    url(r'^sync/$', sync),
+    url(r'^$', index, name='home'),
+    url(r'^sync/$', sync, name='sync'),
     url(r'^signup/', include('signup.urls')),
 ]
 
