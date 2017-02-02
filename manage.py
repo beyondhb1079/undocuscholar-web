@@ -17,7 +17,7 @@ def setup():
 
     if 'DATABASE_URL' not in environ and 'ENV' not in environ and not exists('db.sqlite3'):
         # Check Python version
-        assert sys.version_info >= (3, 5), "Python 3.5+ required"
+        assert sys.version_info >= (3, 4), "Python 3.4+ required"
 
         # Do initial migration and mock data load
         print("Setting up local database...")
