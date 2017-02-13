@@ -5,6 +5,7 @@ import datetime
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils import timezone
+from enum import Enum
 
 # TODO: Figure out how to store these choices
 STATE_CHOICES = (
@@ -74,46 +75,130 @@ SCHOOL_YEAR_CHOICES = (
     ('UG4', 'College Senior'),
 )
 
+class ChoiceEnum(Enum):
+    @classmethod
+    def choices(cls):
+        return [(x.value, x.name) for x in cls]
 
+class ScholarshipStatus(ChoiceEnum):
+    ARCHIVED = 0
+    UNVERIFIED = 1
+    VERIFIED = 2
+
+class ScholarshipAmount(int):
+    UNKNOWN = 0
+    FULL_TUITION = 1
+
+    def __init__(self, val):
+        super(ScholarshipAmount, self).__init__()
+
+    @staticmethod
+    def unknown():
+        if ScholarshipAmount.UNKNOWN is None:
+            ScholarshipAmount.UNKNOWN = ScholarshipAmount(0)
+        return ScholarshipAmount.UNKNOWN
+
+    @staticmethod
+    def full_tuition():
+        if ScholarshipAmount.FULL_TUITION is None:
+            ScholarshipAmount.FULL_TUITION = ScholarshipAmount((1 << 31) - 1)
+        return ScholarshipAmount.FULL_TUITION
+
+    def __str__(self):
+        if self == ScholarshipAmount.UNKNOWN:
+            return "(Unknown)"
+        elif self == ScholarshipAmount.FULL_TUITION:
+            return "(Full Tuition)"
+        else:
+            return "%s" % super(ScholarshipAmount, self).__str__()
+    
+    def __lt__(self, other):
+        if self == ScholarshipAmount.FULL_TUITION:
+            return other == ScholarshipAmount.FULL_TUITION
+        elif other == ScholarshipAmount.FULL_TUITION:
+            return self != ScholarshipAmount.FULL_TUITION
+        else:
+            return super(ScholarshipAmount, self).__lt__(other)
+
+    def __gt__(self, other): return self != other and not self < other
+
+    def __ge__(self, other): return not self < other
+
+    def __le__(self, other): return self == other or self < other
+
+class ScholarshipAmountField(models.PositiveIntegerField):
+    description = "Represents a scholarship amount"
+
+    def __init__(self, *args, **kwargs):
+        super(ScholarshipAmountField, self).__init__(*args, **kwargs)
+
+    def from_db_value(self, value, expression, connection, context):
+        if value is None:
+            return value
+        return ScholarshipAmount(value)
+
+    def to_python(self, value):
+        if isinstance(value, ScholarshipAmount):
+            return value
+
+        if value is None:
+            return value
+
+        return ScholarshipAmount(value)
+
+@python_2_unicode_compatible
+class EligibilityRequirement(models.Model):
+    """
+    Database model for scholarship eligibility requirements.
+    TODO: Better model eligibility requirements
+
+    Future work:
+    - Current Education Level: High School, HS Senior, Grad student
+    - State: WA, OR, etc.
+    - Major: Computer Science, Informatics, Law School, Medical School, etc. (this is tricky)
+    - Target Degree Level: Associates, Bachelor's, etc.
+    - DACA required?
+    - School: University of Washington, etc.
+    - Ethnicity: Hispanic/Latino, Asian/Pacific Islander, African American, etc.
+    - Nationality: Mexico, Guatemala, etc.
+    """
+    min_gpa = models.DecimalField(decimal_places=2, max_digits=3)
+    daca_required = models.BooleanField(default=False, verbose_name='DACA Required?')
+    state = models.CharField(choices=STATE_CHOICES, null=True, max_length=2)
 
 @python_2_unicode_compatible  # only if you need to support Python 2
 class Scholarship(models.Model):
+    """
+    Database model for scholarships.
+
+    Future work:
+    - some scholarships have unspecified deadline, what to do about these?
+    - other potential scholarship attributes:
+      - Award Count: Number of scholarship awards handed out
+      - Acceptance Rate: What percent of applicants get the scholarship
+      - Scholarship Type: Academic/Community/Organization/Athletic
+      - Verifier ID: User ID of the person who verifies a scholarship
+      - Date Verified: Date the scholarship was verified
+
+    """
     name = models.CharField(max_length=255)
-    # TODO: Some deadlines are application count based
     deadline = models.DateField()
-    # TODO: Some unknown | full tuition | vary - how to represent? Negative values?
-    # BETTER idea: Write a custom AmountField, where it's mostly an integer but can also be FULL_TUITION
-    amount = models.PositiveIntegerField(verbose_name="Max Amount ($)", null=True)  
-    description = models.TextField(blank=True)
-    website = models.URLField(blank=True)
-    count = models.PositiveIntegerField(null=True, blank=True, verbose_name="Number of Awards (leave blank if unknown)")
-    archived = models.BooleanField(default=False)
-    verified = models.BooleanField(default=False)
-    date_created = models.DateTimeField(auto_now_add=True)
-    date_updated = models.DateTimeField(auto_now=True)
-    # active = models.BooleanField(default=False)
-    # date_verified = null
-    
-    # TODO: Maybe connect each scholarship to a particular user who owns/verifies it
-    # verifier = models.ForeignKey('auth.User', related_name='scholarships')
-    
-    # Eligibility fields. Should this be another table of its own? YES
-    # min_gpa = models.DecimalField(decimal_places=2, max_digits=3)
-    # education = models.CharField() # SplitArrayField()
-    # state = models.CharField(choices=STATE_CHOICES) 
-    # major = models.CharField(blank=True)
-    # degree_level = models.CharField(blank=True)
-    # daca_only = models.BooleanField()
-    # school = models.CharField(blank=True)
-    # race = models.CharField()
-    # nationality = models.CharField()
+    amount = ScholarshipAmountField(verbose_name="Award Amount ($)", default=ScholarshipAmount.UNKNOWN,
+                                    help_text='Enter the max award amount or 0 for UNKNOWN or 1 for FULL TUITION')
+    description = models.TextField(blank=True, help_text='Short description about the scholarship and any additional requirements')
+    website = models.URLField(blank=True, help_text='Website URL for full scholarship details')
+    status = models.IntegerField(default=1, choices=ScholarshipStatus.choices(), verbose_name='Scholarship Status',
+                                 help_text='VERIFIED - Active and verified. '
+                                           'UNVERIFIED - Active but not verified. '
+                                           'ARCHIVED - Not active.')
+    date_created = models.DateTimeField(auto_now_add=True, help_text='The date a scholarship was added to the database')
+    date_updated = models.DateTimeField(auto_now=True, help_text='The date a scholarship was last updated')
 
     def __repr__(self):
         return '%s - <Name %r, Deadline %r, Amount %r>' % (self.id, self.name, self.deadline, self.amount)
     
     def __str__(self):
         return '%s' % (self.name)
-
 
     def has_old_deadline(self):
         # Has old deadline if deadline is > 180 days ago and self.active (TODO)

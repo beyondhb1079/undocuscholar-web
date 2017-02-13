@@ -1,5 +1,9 @@
-# Ignore Python compiled binaries
+# This tells Git what files to ignore
+
+# Ignore temporary/local folder/files
 *.pyc
 .idea/
+node_modules/
+tmp/
 virtualenv/
 db.sqlite3
