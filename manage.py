@@ -12,7 +12,7 @@ def last_modified_time(path):
 
 def setup():
     """Sets things up"""
-    if sys.argv[1] != 'runserver':
+    if len(sys.argv) < 2 or sys.argv[1] != 'runserver':
         return
 
     if 'DATABASE_URL' not in environ and 'ENV' not in environ and not exists('db.sqlite3'):
