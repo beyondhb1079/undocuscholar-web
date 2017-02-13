@@ -1,0 +1,3 @@
+#!/bin/bash
+# Used for multipack builds
+export PATH=/app/.heroku/node/bin:$PATH

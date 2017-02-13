@@ -1,164 +1,47 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html>
-
-<head>
-    {% block styling %}
-        <!--Import Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <!--    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
-        <link href="../../static/scholarships/css/style.css" type="text/css" rel="stylesheet"
-              media="screen,projection"/>
-
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    {% endblock styling %}
-
-</head>
-
-<body>
-<nav class="black lighten-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">UndocuScholar</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Discover</a></li>
-        </ul>
-
-
-        <ul id="nav-mobile" class="side-nav">
-            <li>
-                <div class="userView">
-                    <img class="background"
-                         src="../../static/scholarships/images/red-background-wallpaper-high-quality-6431-wallpaper-cool.jpg">
-                    <a href="#!user"><img class="circle" src="../../static/scholarships/images/test"></a>
-                    <a href="#!name"><span class="white-text name">User's Name</span></a>
-                    <a href="#!email"><span class="white-text email">dev@skagit.edu</span></a>
+{% extends 'scholarships/_base.html' %}
+{% load static %}
+{% load custom %}
+{% block content %}
+    {% for scholarship in scholarships %}
+        <div style="margin-left: 10%; margin-right:10%">
+            <div class="card horizontal collection-item">
+                <div class="card-image">
+                    <img src="{% static 'scholarships/images/test' %}" alt="" class="circle">
                 </div>
-            </li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i
-                class="material-icons">menu</i></a>
-    </div>
-</nav>
-
-{% for scholarship in scholarships %}
-    <ul class="collection">
-        <li class="collection-item avatar">
-            <img src="../../static/scholarships/images/test" alt="" class="circle">
-            <span class="title"> {{ scholarship.name }} </span>
-            <p>${{ scholarship.amount }} <br>
-                sholarship description if any.. {{ scholarship.description }}</p>
-            <p class="secondary-content">Due on: {{ scholarship.deadline }}</p>
-<!--            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
-        </li>
-
-
-{#        <li class="collection-item avatar">#}
-{#            <i class="material-icons circle">folder</i>#}
-{#            <span class="title">Title</span>#}
-{#            <p>First Line <br>#}
-{#                Second Line#}
-{#            </p>#}
-{#            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>#}
-{#        </li>#}
-{#        <li class="collection-item avatar">#}
-{#            <i class="material-icons circle green">insert_chart</i>#}
-{#            <span class="title">Title</span>#}
-{#            <p>First Line <br>#}
-{#                Second Line#}
-{#            </p>#}
-{#            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>#}
-{#        </li>#}
-{#        <li class="collection-item avatar">#}
-{#            <i class="material-icons circle red">play_arrow</i>#}
-{#            <span class="title">Title</span>#}
-{#            <p>First Line <br>#}
-{#                Second Line#}
-{#            </p>#}
-{#            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>#}
-{#        </li>#}
-
-    </ul>
-
-{% endfor %}
-
-        <div class="center pagination">
-            <span class="step-links">
-                {% if scholarships.has_previous %}
-                    <a href="?page={{ scholarships.previous_page_number }}">previous</a>
-                {% endif %}
-
-                <span class="current">
-                    Page {{ scholarships.number }} of {{ scholarships.paginator.num_pages }}.
-                </span>
-
-                {% if scholarships.has_next %}
-                    <a href="?page={{ scholarships.next_page_number }}">next</a>
-                {% endif %}
-            </span>
-        </div>
-
-
-
-
-
-<footer class="page-footer orange">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 offset-l1 s12">
-                <h5 class="white-text">About Us</h5>
-                <p class="grey-text text-lighten-4 l4">We are a team of college students working on this project like
-                    it's our full time job. Any amount would help support and continue development on this project and
-                    is greatly appreciated.</p>
-
-
-            </div>
-            <div class="col l2 s12">
-                <h5 class="white-text">Site</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Privacy</a></li>
-                    <li><a class="white-text" href="#!">Support</a></li>
-                    <li><a class="white-text" href="#!">API</a></li>
-                    <li><a class="white-text" href="#!">Help</a></li>
-                </ul>
-            </div>
-            <div class="hide-on-small-only col l3 s12">
-                <h5 class="white-text">Connect</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Facebook</a></li>
-                    <li><a class="white-text" href="#!">Twitter</a></li>
-                    <li><a class="white-text" href="#!">GitHub</a></li>
-                    <!--                        <li><a class="white-text" href="#!">Link 4</a></li>-->
-                </ul>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <span class="title card-title"><b>${{ scholarship.amount }}</b> - {{ scholarship.name }}</span>
+                        <p>Due on: {{ scholarship.deadline }}</p>
+                        <p>{{ scholarship.description }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{{ scholarship.website }}">View Scholarship</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <!--                Made by <a class="orange-text text-lighten-3" href="#">Materialize</a>-->
-        </div>
-    </div>
-</footer>
+    {% endfor %}
+
+    <ul class="center pagination">
+        {% if scholarships.has_previous %}
+            <li class="waves-effect"><a href="?page={{ scholarships.previous_page_number }}"><i class="material-icons">chevron_left</i></a></li>
+        {% else %}
+            <li class="disabled"><i class="material-icons">chevron_left</i></li>
+        {% endif %}
+
+        {% for n in scholarships.paginator.num_pages|iterations %}
+            {% if scholarships.number == n %}
+                <li class="active"><a href="?page={{ n }}">{{ n }}</a></li>
+            {% else %}
+                <li class="waves-effect"><a href="?page={{ n }}">{{ n }}</a></li>
+            {% endif %}
+        {% endfor %}
 
 
-{% block javascript %}
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!--    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script tyoe="text/javascript" src="../../static/scholarships/js/init.js"></script>
-{% endblock javascript %}
-</body>
-
-</html>
+        {% if scholarships.has_next %}
+            <li class="waves-effect"><a href="?page={{ scholarships.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
+        {% else %}
+            <li class="disabled"><i class="material-icons">chevron_right</i></li>
+        {% endif %}
+      </ul>
+{% endblock %}
