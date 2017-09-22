@@ -34,12 +34,17 @@ urlpatterns = [
     url(r'^$', index, name='home'),
     url(r'^sync/$', sync, name='sync'),
 <<<<<<< HEAD
+<<<<<<< HEAD
     url(r'^signup/', include('signup.urls')),
     url(r'^about/$', about, name='about'),
     url(r'^reg/$', reg, name='reg')
 =======
     url(r'^users/', include('users.urls'))
 >>>>>>> Refactored base template and created users app
+=======
+    url(r'^users/', include('users.urls')),
+    url(r'^about/$', about, name='about'),
+>>>>>>> Footer is fixed. About page was created and reg (registraton) page created.
 ]
 
 
