@@ -1,4 +1,4 @@
-Django==1.9
+Django==1.11
 SecretStorage==2.0.0
 argparse==1.2.1
 colorama==0.2.5
@@ -14,13 +14,13 @@ lockfile==0.8
 lpthw.web==1.1
 oauth==1.0.1
 psycopg2==2.6.2
-pyparsing==2.0.1
+pyparsing==2.0.2
 python-dateutil==1.5
 pytz==2012c
 requests==2.2.1
 simplegeneric==0.8.1
 simplejson==3.3.1
-six==1.5.2
+six==1.6.0
 urllib3==1.7.1
 virtualenv==1.11.4
 virtualenv-clone==0.2.4

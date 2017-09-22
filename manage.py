@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from os import environ
 from os.path import exists, getmtime
 
@@ -12,7 +12,7 @@ def last_modified_time(path):
 
 def setup():
     """Sets things up"""
-    if sys.argv[1] != 'runserver':
+    if len(sys.argv) < 2 or sys.argv[1] != 'runserver':
         return
 
     if 'DATABASE_URL' not in environ and 'ENV' not in environ and not exists('db.sqlite3'):
@@ -27,13 +27,13 @@ def setup():
     # Automatically downloads JS/CSS dependencies. It's hackish, but will do for now.
     if last_modified_time('package.json') > last_modified_time('node_modules'):
         # static/node_modules is nonexistent or out of date. Automatically
-        print('Changes in static/package.json detected. Downloading node packages to node_modules...')
+        print('Changes in package.json were detected. Downloading node packages to node_modules...')
         assert which("npm"), "npm needs to be installed: https://nodejs.org/en/download/"
         call([which("npm"), "install"])
 
 if __name__ == "__main__":
-    setup()
     environ.setdefault("DJANGO_SETTINGS_MODULE", "undocuscholar.settings")
+    setup()
     execute_from_command_line(sys.argv)
 
 
