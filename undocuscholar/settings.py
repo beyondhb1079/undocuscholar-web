@@ -30,8 +30,8 @@ ENV = os.getenv("ENV", "local")
 DEBUG = ENV != 'prod'
 
 ALLOWED_HOSTS = ['www.undocuscholar.org', 'undocuscholar.herokuapp.com', 'localhost']
-SECURE_SSL_HOST = ENV != 'local'
-SECURE_SSL_REDIRECT = ENV != 'local'
+SECURE_SSL_HOST = 'undocuscholar.herokuapp.com'
+SECURE_SSL_REDIRECT = ENV == 'prod'
 SESSION_COOKIE_SECURE = ENV != 'local'
 CSRF_COOKIE_SECURE = ENV != 'local'
 SECURE_HSTS_PRELOAD = ENV != 'local'
