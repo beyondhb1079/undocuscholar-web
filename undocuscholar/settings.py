@@ -16,6 +16,8 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from shutil import which
 
+# These are the changes I wanted to make
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
