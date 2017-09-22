@@ -25,6 +25,7 @@ from scholarships.views import index, sync
 urlpatterns = [
     url(r'^admin/password_reset/$', auth_views.password_reset, name='admin_password_reset'),
     url(r'^admin/password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
+    url(r'^admin/signup/', include('signup.urls')),
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>.+)/$', auth_views.password_reset_confirm, name='password_reset_confirm'),
     url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'), 
     url(r'^admin/', admin.site.urls),
@@ -32,7 +33,7 @@ urlpatterns = [
     url(r'^scholarships/', include('scholarships.urls')),
     url(r'^$', index, name='home'),
     url(r'^sync/$', sync, name='sync'),
-    url(r'^signup/', include('signup.urls')),
+    url(r'^users/', include('users.urls'))
 ]
 
 

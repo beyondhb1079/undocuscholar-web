@@ -19,7 +19,6 @@ from shutil import which
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -27,10 +26,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z$x6zt!kb8qg*o=vq)(ms!zue*gay1gcxh@w+sckkhc+^mz#df'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+ENV = os.getenv("ENV", "local")
+DEBUG = ENV != 'prod'
 
-ALLOWED_HOSTS = ['www.undocuscholar.org']
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ALLOWED_HOSTS = ['www.undocuscholar.org', 'undocuscholar.herokuapp.com', 'localhost']
+SECURE_SSL_HOST = 'undocuscholar.herokuapp.com'
+SECURE_SSL_REDIRECT = ENV == 'prod'
+SESSION_COOKIE_SECURE = ENV != 'local'
+CSRF_COOKIE_SECURE = ENV != 'local'
+SECURE_HSTS_PRELOAD = ENV != 'local'
+SECURE_HSTS_SECONDS = 3600
 
 
 # Application definition
@@ -45,8 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'scholarships',
-    'scholarships.templatetags.custom'
-
+    'scholarships.templatetags.custom',
+    'users'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -65,7 +70,7 @@ ROOT_URLCONF = 'undocuscholar.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(os.path.join(os.path.dirname(__file__), os.pardir), 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,7 +94,7 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.config()
     }
-elif os.getenv('ENV', 'local') in ('prod', 'dev'):
+elif ENV != 'local':
     print('ERROR: ENV exported but DATABASE_URL not exported')
     exit(1)
 else:
