@@ -29,7 +29,7 @@ SECRET_KEY = 'z$x6zt!kb8qg*o=vq)(ms!zue*gay1gcxh@w+sckkhc+^mz#df'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.undocuscholar.org']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
