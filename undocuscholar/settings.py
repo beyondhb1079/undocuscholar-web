@@ -50,8 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'scholarships',
-    'scholarships.templatetags.custom'
-
+    'scholarships.templatetags.custom',
+    'users'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -70,7 +70,7 @@ ROOT_URLCONF = 'undocuscholar.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(os.path.join(os.path.dirname(__file__), os.pardir), 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
