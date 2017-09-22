@@ -16,8 +16,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from shutil import which
 
-# These are the changes I wanted to make
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -31,7 +29,7 @@ SECRET_KEY = 'z$x6zt!kb8qg*o=vq)(ms!zue*gay1gcxh@w+sckkhc+^mz#df'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.undocuscholar.org']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
