@@ -18,7 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{% block title %}{% endblock %}</title>
 </head>
+
+
 <body>
+    <header>
     <!--Navigation Bar-->
     <nav class="black lighten-2" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">UndocuScholar</a>
@@ -47,11 +50,12 @@
                     class="material-icons">menu</i></a>
         </div>
     </nav>
-
+</header>
     <!--Main Content-->
+    <main>
     {% block content %}
     {% endblock %}
-
+    </main>
     <!--Footer-->
     <footer class="page-footer orange">
         <div class="container">

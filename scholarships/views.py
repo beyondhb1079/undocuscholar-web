@@ -52,3 +52,9 @@ def sync(request):
 
 def detail(request, scholarship_id):
     return HttpResponse('TODO: Page info for scholarship with ID: %s' % scholarship_id)
+
+def about(request):
+    return render(request, 'scholarships/about.html')
+
+def reg(request):
+    return render(request, 'scholarships/reg.html')

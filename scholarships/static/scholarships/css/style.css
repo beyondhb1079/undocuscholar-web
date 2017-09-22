@@ -6,9 +6,12 @@
 }
 /* Lines deleted here already exist in materialize.css which is loaded in each page. */
 /* Everything below is our custom styling */
+/*
 body {
 	background-color:#fcfcfc
 }
+*/
+
 p.box {
 	padding:20px
 }
@@ -40,9 +43,11 @@ nav ul li a:hover,nav ul li.active {
 	border:1px solid #eee;
 	padding:20px 20px
 }
+/*
 header,main,footer {
-/*	padding-left:300px*/
+	padding-left:300px
 }
+*/
 .parallax-demo header,.parallax-demo main,.parallax-demo footer {
 	padding-left:0
 }

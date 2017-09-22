@@ -1,3 +1,5 @@
+
+
 (function($){
   $(function(){
   // Initialize collapse button
@@ -7,3 +9,6 @@
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+
+
