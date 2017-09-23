@@ -1,0 +1,11 @@
+
+<div class="switch">
+<label>
+  {{ widget.off }}
+  <input type="checkbox" name="{{ widget.name }}"
+          {% if widget.value != None %} value="{{ widget.value }}" {% endif %}
+  />
+  <span class="lever"></span>
+  {{ widget.on }}
+</label>
+</div>
