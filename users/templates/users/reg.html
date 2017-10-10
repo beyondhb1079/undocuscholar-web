@@ -74,27 +74,52 @@
                             <label for="icon_telephone">Last Name</label>
                         </div>
                     </div>
-<div class="row">
-                    <div class="input-field col s12 m6">
-                        <select class="icons">
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <select class="icons">
       <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="images/sample-1.jpg" class="circle">example 1</option>
-      <option value="" data-icon="images/office.jpg" class="circle">example 2</option>
-      <option value="" data-icon="images/yuna.jpg" class="circle">example 3</option>
+        <option value="1" data-icon="images/sample-1.jpg" class="left circle">High School Freshman (H.S. Class of 2021)</option>
+        <option value="2" data-icon="images/sample-1.jpg" class="left circle">High School Sophomore (H.S. Class of 2020)</option>
+        <option value="3" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">High School Junior (H.S. Class of 2019)</option>
+        <option value="4" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">High School Senior (H.S. Class of 2018)</option>
+        <option value="5" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Freshman (College Class of 2021)</option>
+        <option value="6" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Sophomore (College Class of 2020)</option>
+        <option value="7" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Junior (College Class of 2019)</option>
+        <option value="8" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Senior (College Class of 2018)</option>
+        <option value="9" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 1st Year</option>
+        <option value="10" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 2nd Year</option>
+        <option value="11" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 3rd Year</option>
+        <option value="12" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 4th Year</option>
+        <option value="14" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Trade/Technical/Home School/GED</option>
+        <option value="15" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Not Currently Enrolled/Non-Traditional Student</option>
     </select>
-                        <label>What Level of education do you hold?</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <select class="icons">
+                            <label>Current Grade In School?</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <select class="icons">
       <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="images/sample-1.jpg" class="left circle">example 1</option>
-      <option value="" data-icon="images/office.jpg" class="left circle">example 2</option>
-      <option value="" data-icon="{ % static 'scholarsips/images/avatar' %}" class="left circle">example 3</option>
+        <option value="1" data-icon="images/sample-1.jpg" class="left circle">High School Freshman (H.S. Class of 2021)</option>
+        <option value="2" data-icon="images/sample-1.jpg" class="left circle">High School Sophomore (H.S. Class of 2020)</option>
+        <option value="3" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">High School Junior (H.S. Class of 2019)</option>
+        <option value="4" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">High School Senior (H.S. Class of 2018)</option>
+        <option value="5" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Freshman (College Class of 2021)</option>
+        <option value="6" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Sophomore (College Class of 2020)</option>
+        <option value="7" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Junior (College Class of 2019)</option>
+        <option value="8" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">College Senior (College Class of 2018)</option>
+        <option value="9" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 1st Year</option>
+        <option value="10" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 2nd Year</option>
+        <option value="11" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 3rd Year</option>
+        <option value="12" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Graduate School 4th Year</option>
+        <option value="14" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Trade/Technical/Home School/GED</option>
+        <option value="15" data-icon="{% static 'scholarsips/images/avatar' %}" class="left circle">Not Currently Enrolled/Non-Traditional Student</option>
     </select>
-                        <label>Enter your current state.</label>
-                    </div>
+                            <label>Enter your current state.</label>
+                        </div>
 
                     </div>
+
+<!--                    date picker-->
+                      <input type="text" class="datepicker">
 
                 </form>
             </div>
@@ -105,7 +130,9 @@
 <!--end of container-->
 
 {% endblock %} {% block extra_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script type="text/javascript" src="{% static 'scholarships/js/reg.js' %}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://raw.githubusercontent.com/Dogfalo/materialize/master/js/date_picker/picker.js"></script>
+<script type="text/javascript" src="{% static 'scholarships/js/date.js' %}"></script>
 
 {% endblock %}
