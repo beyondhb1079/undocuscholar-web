@@ -33,22 +33,14 @@ urlpatterns = [
     url(r'^scholarships/', include('scholarships.urls')),
     url(r'^$', index, name='home'),
     url(r'^sync/$', sync, name='sync'),
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     url(r'^signup/', include('signup.urls')),
     url(r'^about/$', about, name='about'),
-    url(r'^reg/$', reg, name='reg')
-=======
-    url(r'^users/', include('users.urls'))
->>>>>>> Refactored base template and created users app
-=======
+
     url(r'^users/', include('users.urls')),
     url(r'^about/$', about, name='about'),
-<<<<<<< HEAD
->>>>>>> Footer is fixed. About page was created and reg (registraton) page created.
-=======
+
     url(r'^reg/$', reg, name='reg'),
->>>>>>> updated materialize and added the reg page.
 ]
 
 
