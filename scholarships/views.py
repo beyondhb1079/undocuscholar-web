@@ -40,10 +40,7 @@ def sync(request):
 
 def detail(request, scholarship_id):
     return HttpResponse('TODO: Page info for scholarship with ID: %s' % scholarship_id)
-<<<<<<< HEAD
-=======
 
->>>>>>> Footer is fixed. About page was created and reg (registraton) page created.
 def about(request):
     return render(request, 'scholarships/about.html')
 
