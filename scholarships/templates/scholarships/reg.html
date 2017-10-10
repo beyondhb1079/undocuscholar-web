@@ -1,4 +1,4 @@
-{% extends 'scholarships/_base.html' %} {% load static %} {% block content %}
+{% extends '_base.html' %} {% load static %} {% block content %}
 <!--add conets-->
 <div class="container">
     <div class="row">
@@ -8,11 +8,11 @@
                 <!-- Switch -->
                 <div class="switch">
                     <label>
-      Student
-      <input type="checkbox">
-      <span class="lever"></span>
-      Parent
-    </label>
+                      Student
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      Parent
+                    </label>
                 </div>
                 <!--end of switch-->
 
@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="input-field col s12 m6">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate">
+                            <input id="icon_prefix" type="text" class="validate disable">
                             <label for="icon_prefix">First Name</label>
                         </div>
                         <div class="input-field col s12 m6">

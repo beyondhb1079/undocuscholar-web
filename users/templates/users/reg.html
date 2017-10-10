@@ -1,0 +1,111 @@
+{% extends '_base.html' %} {% load static %} {% block content %}
+<!--add conets-->
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <br><br>
+            <div class="container">
+                <h5>Progress Bar</h5>
+                <div class="progress">
+                    <div class="determinate" style="width: 70%"></div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h5> I am a?</h5>
+                        <div class="switch">
+                            <label>
+        Student.
+        <input type="checkbox" id="sid">
+        <span class="lever tooltipped" data-position="top" data-delay="50" data-tooltip="Activate this module if you are the parent of the student."></span>
+        Parent of a Student.
+        </label>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <h5> 18yrs or older?</h5>
+                        <div class="switch">
+                            <label>
+        Yes.
+        <input type="checkbox" id="age">
+        <span class="lever tooltipped" data-position="top" data-delay="50" data-tooltip="Activate this, only if you are under 18 years of age."></span>
+        No.
+        </label>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of Row -->
+
+            </div>
+            <!-- end of switch container -->
+
+
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <h5> Children Name</h5>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">face</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">face</i>
+                            <input id="icon_telephone" type="text" class="validate">
+                            <label for="icon_telephone">Last Name</label>
+                        </div>
+                    </div>
+                    <!-- end of first row -->
+
+                    <div class="row">
+                        <h5>Parents Name</h5>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_telephone" type="text" class="validate">
+                            <label for="icon_telephone">Last Name</label>
+                        </div>
+                    </div>
+<div class="row">
+                    <div class="input-field col s12 m6">
+                        <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg" class="circle">example 1</option>
+      <option value="" data-icon="images/office.jpg" class="circle">example 2</option>
+      <option value="" data-icon="images/yuna.jpg" class="circle">example 3</option>
+    </select>
+                        <label>What Level of education do you hold?</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg" class="left circle">example 1</option>
+      <option value="" data-icon="images/office.jpg" class="left circle">example 2</option>
+      <option value="" data-icon="{ % static 'scholarsips/images/avatar' %}" class="left circle">example 3</option>
+    </select>
+                        <label>Enter your current state.</label>
+                    </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end of row-->
+</div>
+<!--end of container-->
+
+{% endblock %} {% block extra_js %}
+<script type="text/javascript" src="{% static 'scholarships/js/reg.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+{% endblock %}

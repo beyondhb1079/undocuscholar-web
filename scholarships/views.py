@@ -48,4 +48,4 @@ def about(request):
     return render(request, 'scholarships/about.html')
 
 def reg(request):
-    return render(request, 'scholarships/reg.html')
+    return render(request, 'users/reg.html')

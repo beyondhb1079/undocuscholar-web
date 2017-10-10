@@ -44,7 +44,11 @@ urlpatterns = [
 =======
     url(r'^users/', include('users.urls')),
     url(r'^about/$', about, name='about'),
+<<<<<<< HEAD
 >>>>>>> Footer is fixed. About page was created and reg (registraton) page created.
+=======
+    url(r'^reg/$', reg, name='reg'),
+>>>>>>> updated materialize and added the reg page.
 ]
 
 
