@@ -29,9 +29,13 @@ SECRET_KEY = 'z$x6zt!kb8qg*o=vq)(ms!zue*gay1gcxh@w+sckkhc+^mz#df'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
+# Redirect all non-HTTPS requests
+SECURE_SSL_REDIRECT = True
+SECURE_SSL_HOST = 'undocuscholar.herokuapp.com'
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_SECONDS = 3600
 
 # Application definition
 
